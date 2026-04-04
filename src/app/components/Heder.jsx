@@ -137,18 +137,15 @@ export default function Header() {
 
             <nav className="flex flex-col gap-3 px-6 relative z-10">
               <p className="text-zinc-500 text-[11px] uppercase font-bold tracking-[3px] mb-2 ml-2">Navegação</p>
-              
-              <a onClick={() => setIsOpen(false)} href="#" className="flex items-center justify-between bg-white/5 p-5 rounded-2xl border border-white/5 active:bg-white/10 transition-all group">
-                <span className="text-white text-xl font-bold tracking-tight italic">Categorias</span>
-                <span className="text-green-500">→</span>
-              </a>
 
-              <a onClick={() => setIsOpen(false)} href="#" className="flex items-center justify-between bg-white/5 p-5 rounded-2xl border border-white/5 active:bg-white/10 transition-all group">
+              
+          
+              <a onClick={() => setIsOpen(false)} href="/jogos-demo" className="flex items-center justify-between bg-white/5 p-5 rounded-2xl border border-white/5 active:bg-white/10 transition-all group">
                 <span className="text-white text-xl font-bold tracking-tight italic">Jogos Demo</span>
                 <span className="text-green-500">→</span>
               </a>
 
-              <a onClick={() => setIsOpen(false)} href="#" className="flex items-center justify-between bg-white/5 p-5 rounded-2xl border border-white/5 active:bg-white/10 transition-all group">
+              <a onClick={() => setIsOpen(false)} href="/tips-and-strategies" className="flex items-center justify-between bg-white/5 p-5 rounded-2xl border border-white/5 active:bg-white/10 transition-all group">
                 <span className="text-white text-xl font-bold tracking-tight italic">Dicas e Estratégias</span>
                 <span className="text-green-500">→</span>
               </a>
@@ -157,7 +154,7 @@ export default function Header() {
             <div className="p-6 bg-white/[0.02] border-t border-white/5 backdrop-blur-sm">
               <a 
                 onClick={() => setIsOpen(false)}
-                href="#" 
+                href="/cassinos-com-pix" 
                 className="relative flex items-center justify-center w-full bg-gradient-to-r from-[#fbff00] to-[#00ff40] p-5 rounded-2xl text-black font-black text-lg uppercase italic tracking-tighter shadow-[0_10px_40px_rgba(0,255,64,0.3)]"
               >
                 <span>🚀 Cassinos com PIX</span>
