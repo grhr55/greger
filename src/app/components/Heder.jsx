@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <div>
       <header className="w-full bg-[#0d1e0b] border-b-2 pt-[20px] pb-[20px] border-green-600 shadow-[0_4px_20px_rgba(0,168,89,0.2)] sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4 h-[150px] md:h-[120px] flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 h-[150px] max-[500px]:h-[80px] flex items-center justify-between">
          
           <div className="flex-shrink-0 z-50">
             <Image
@@ -20,7 +20,7 @@ export default function Header() {
               alt="Logo"
               width={150}
               height={40}
-              className="drop-shadow-[0_0_8px_rgba(255,215,0,0.3)]"
+              className="drop-shadow-[0_0_8px_rgba(255,215,0,0.3)] w-[150px] max-[500px]:w-[120px]  "
             />
           </div>
 
