@@ -8,9 +8,9 @@ import { Star } from "lucide-react";
 
 export default function Sposok() {
   return (
-    <section className=" px-4 bg-[#0f2310] min-h-screen">
+    <section className=" px-4 bg-[#122913] min-h-screen">
       <div className="max-w-5xl mx-auto">
-        {/* Заголовок в стиле Бразилии */}
+       
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl pt-10 font-black text-white uppercase italic tracking-tighter">
             Top <span className="text-green-500">Cassinos</span> no <span className="text-yellow-400">Brasil</span>

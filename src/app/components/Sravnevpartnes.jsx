@@ -3,7 +3,7 @@ import { Check, Zap, Trophy, Star } from "lucide-react";
 
 export default function Sravnevs() {
   return (
-    <section className="bg-[#0f2310] py-20 px-4 selection:bg-green-500/30">
+    <section className="bg-[#122913] py-20 px-4 selection:bg-green-500/30">
       <div className="max-w-6xl mx-auto">
         
         {/* --- HEADER --- */}

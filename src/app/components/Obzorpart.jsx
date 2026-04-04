@@ -13,7 +13,7 @@ export default function Obzornik() {
   };
 
   return (
-    <section className="bg-[#0f2310] py-16 px-6 min-h-screen">
+    <section className="bg-[#122913] py-16 px-6 min-h-screen">
       <div className="max-w-6xl mx-auto">
         
         <div className="mb-16 text-center">
