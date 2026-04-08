@@ -23,98 +23,83 @@ export default function Header() {
             />
           </div>
 
-     <nav className="hidden md:flex items-center gap-8 text-amber-50 font-bold text-[14px]">
-  
- 
-  <div className="relative group py-4">
-    <button className="flex items-center gap-1 hover:text-green-500 transition-colors uppercase tracking-tighter font-black italic cursor-pointer">
-      Categorias
-      <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-300 text-green-500" />
-    </button>
-    <div className="absolute top-full left-0 mt-0 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pt-4">
-      <div className="bg-[#0a0a0a] border border-white/10 rounded-2xl p-2 shadow-[0_10px_40px_rgba(0,0,0,0.8)] backdrop-blur-xl">
-        <a href="/reviews" className="flex items-center gap-3 px-4 py-3 hover:bg-white/5 rounded-xl transition-colors group/item">
-          <MessageSquare size={16} className="text-blue-500" />
-          <div className="flex flex-col">
-            <span className="text-white text-[11px] font-black uppercase italic tracking-wider">Avaliações</span>
-            <span className="text-zinc-500 text-[9px] uppercase font-bold tracking-tighter text-left">O que dizem os players</span>
-          </div>
-        </a>
+      <nav className="hidden md:flex items-center gap-8 text-amber-50 font-bold text-[14px]">
        
-      </div>
-    </div>
-  </div>
+      
+     
+     
+       {/* 2. BÔNUS (ПАРТНЕРЫ С ИХ БОНУСАМИ) */}
+       <div className="relative group py-4">
+         <button className="flex items-center gap-1 hover:text-green-500 transition-colors uppercase tracking-tighter font-black italic cursor-pointer text-green-500">
+           Bônus
+           <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-300" />
+         </button>
+         <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pt-4">
+           <div className="bg-[#0a0a0a] border border-green-500/20 rounded-2xl p-3 shadow-[0_10px_50px_rgba(0,168,89,0.3)] backdrop-blur-xl">
+             <p className="text-[9px] text-zinc-500 font-black uppercase tracking-[2px] mb-3 ml-2 italic text-left">Melhores Ofertas</p>
+             <div className="flex flex-col gap-2">
+               {leaders.slice(0, 3).map((leader) => (
+                 <a key={leader.id} href={`/bonus/${leader.title}`} className="flex items-center justify-between p-3 bg-white/5 hover:bg-green-500/10 border border-white/5 hover:border-green-500/30 rounded-xl transition-all group/partner">
+                   <div className="flex items-center gap-3">
+                     <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center p-1.5 border border-white/10 group-hover/partner:border-green-500/50">
+                       <img src={leader.logo} alt={leader.title} className="w-full h-full object-contain" />
+                     </div>
+                     <div className="flex flex-col text-left">
+                       <span className="text-white text-[12px] font-black uppercase italic leading-none mb-1">{leader.title}</span>
+                       <span className="text-green-500 text-[10px] font-bold tracking-tighter uppercase leading-none">{leader.bonus}</span>
+                     </div>
+                   </div>
+                 </a>
+               ))}
+             </div>
+           </div>
+         </div>
+       </div>
+     
+       {/* 3. PAGAMENTOS (ПАРТНЕРЫ С АКЦЕНТОМ НА ВЫВОД И PIX) */}
+       <div className="relative group py-4">
+         <button className="flex items-center gap-1 hover:text-green-500 transition-colors uppercase tracking-tighter font-black italic cursor-pointer">
+           Pagamentos
+           <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-300 text-green-500" />
+         </button>
+         <div className="absolute top-full right-0 mt-0 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pt-4">
+           <div className="bg-[#0a0a0a] border border-blue-500/20 rounded-2xl p-3 shadow-[0_10px_50px_rgba(0,123,255,0.2)] backdrop-blur-xl text-left">
+             <p className="text-[9px] text-zinc-500 font-black uppercase tracking-[2px] mb-3 ml-2 italic">Saque Rápido via PIX</p>
+             <div className="flex flex-col gap-2">
+               {leaders.slice(0, 3).map((leader) => (
+                 <a key={leader.id} href={`/payment-methods/${leader.title}`} className="flex items-center justify-between p-3 bg-white/5 hover:bg-blue-500/10 border border-white/5 hover:border-blue-500/30 rounded-xl transition-all group/pay">
+                   <div className="flex items-center gap-3">
+                     <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center p-1.5 border border-white/10 group-hover/pay:border-blue-500/50">
+                       <img src={leader.logo} alt={leader.title} className="w-full h-full object-contain" />
+                     </div>
+                     <div className="flex flex-col text-left">
+                       <span className="text-white text-[12px] font-black uppercase italic leading-none mb-1">{leader.title}</span>
+                       <div className="flex items-center gap-1">
+                         <Zap size={10} className="text-amber-400 fill-amber-400" />
+                         <span className="text-blue-400 text-[10px] font-bold tracking-tighter uppercase leading-none">{leader.pixrab}</span>
+                       </div>
+                     </div>
+                   </div>
+                   <div className="bg-green-500/10 px-2 py-0.5 rounded text-green-500 text-[8px] font-black uppercase italic">PIX</div>
+                 </a>
+               ))}
+             </div>
+           </div>
+         </div>
+       </div>
+     
+       <a href="/jogos-demo" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Jogos Demo</a>
+       <a href="/tips-and-strategies" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Dicas e estratégias</a>
+       <a href="/about-us" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Sobre nós</a>
+     
+       <a 
+         href="/cassinos-com-pix" 
+         className="bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-green-500 hover:to-green-600 text-black px-6 py-2 rounded-md font-black transition-all shadow-[0_0_15px_rgba(251,191,36,0.4)] uppercase italic"
+       >
+         Cassinos com PIX
+       </a>
+     </nav>
 
-  {/* 2. BÔNUS (ПАРТНЕРЫ С ИХ БОНУСАМИ) */}
-  <div className="relative group py-4">
-    <button className="flex items-center gap-1 hover:text-green-500 transition-colors uppercase tracking-tighter font-black italic cursor-pointer text-green-500">
-      Bônus
-      <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-300" />
-    </button>
-    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pt-4">
-      <div className="bg-[#0a0a0a] border border-green-500/20 rounded-2xl p-3 shadow-[0_10px_50px_rgba(0,168,89,0.3)] backdrop-blur-xl">
-        <p className="text-[9px] text-zinc-500 font-black uppercase tracking-[2px] mb-3 ml-2 italic text-left">Melhores Ofertas</p>
-        <div className="flex flex-col gap-2">
-          {leaders.slice(0, 3).map((leader) => (
-            <a key={leader.id} href={`/bonus/${leader.title}`} className="flex items-center justify-between p-3 bg-white/5 hover:bg-green-500/10 border border-white/5 hover:border-green-500/30 rounded-xl transition-all group/partner">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center p-1.5 border border-white/10 group-hover/partner:border-green-500/50">
-                  <img src={leader.logo} alt={leader.title} className="w-full h-full object-contain" />
-                </div>
-                <div className="flex flex-col text-left">
-                  <span className="text-white text-[12px] font-black uppercase italic leading-none mb-1">{leader.title}</span>
-                  <span className="text-green-500 text-[10px] font-bold tracking-tighter uppercase leading-none">{leader.bonus}</span>
-                </div>
-              </div>
-            </a>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-
-  {/* 3. PAGAMENTOS (ПАРТНЕРЫ С АКЦЕНТОМ НА ВЫВОД И PIX) */}
-  <div className="relative group py-4">
-    <button className="flex items-center gap-1 hover:text-green-500 transition-colors uppercase tracking-tighter font-black italic cursor-pointer">
-      Pagamentos
-      <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-300 text-green-500" />
-    </button>
-    <div className="absolute top-full right-0 mt-0 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pt-4">
-      <div className="bg-[#0a0a0a] border border-blue-500/20 rounded-2xl p-3 shadow-[0_10px_50px_rgba(0,123,255,0.2)] backdrop-blur-xl text-left">
-        <p className="text-[9px] text-zinc-500 font-black uppercase tracking-[2px] mb-3 ml-2 italic">Saque Rápido via PIX</p>
-        <div className="flex flex-col gap-2">
-          {leaders.slice(0, 3).map((leader) => (
-            <a key={leader.id} href={`/payment-methods/${leader.title}`} className="flex items-center justify-between p-3 bg-white/5 hover:bg-blue-500/10 border border-white/5 hover:border-blue-500/30 rounded-xl transition-all group/pay">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center p-1.5 border border-white/10 group-hover/pay:border-blue-500/50">
-                  <img src={leader.logo} alt={leader.title} className="w-full h-full object-contain" />
-                </div>
-                <div className="flex flex-col text-left">
-                  <span className="text-white text-[12px] font-black uppercase italic leading-none mb-1">{leader.title}</span>
-                  <div className="flex items-center gap-1">
-                    <Zap size={10} className="text-amber-400 fill-amber-400" />
-                    <span className="text-blue-400 text-[10px] font-bold tracking-tighter uppercase leading-none">{leader.pixrab}</span>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-green-500/10 px-2 py-0.5 rounded text-green-500 text-[8px] font-black uppercase italic">PIX</div>
-            </a>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <a href="/jogos-demo" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Jogos Demo</a>
-  <a href="#" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Dicas e estratégias</a>
-
-  <a 
-    href="#" 
-    className="bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-green-500 hover:to-green-600 text-black px-6 py-2 rounded-md font-black transition-all shadow-[0_0_15px_rgba(251,191,36,0.4)] uppercase italic"
-  >
-    Cassinos com PIX
-  </a>
-</nav>
 
           {/* Бургер для мобилок */}
           <div className="md:hidden z-50">
@@ -154,18 +139,19 @@ export default function Header() {
             <nav className="flex flex-col gap-3 px-6 relative z-10">
               <p className="text-zinc-500 text-[11px] uppercase font-bold tracking-[3px] mb-2 ml-2">Navegação</p>
               
-              <a onClick={() => setIsOpen(false)} href="#" className="flex items-center justify-between bg-white/5 p-5 rounded-2xl border border-white/5 active:bg-white/10 transition-all group">
-                <span className="text-white text-xl font-bold tracking-tight italic">Categorias</span>
-                <span className="text-green-500">→</span>
-              </a>
-
-              <a onClick={() => setIsOpen(false)} href="#" className="flex items-center justify-between bg-white/5 p-5 rounded-2xl border border-white/5 active:bg-white/10 transition-all group">
+            
+                <a onClick={() => setIsOpen(false)} href="/jogos-demo" className="flex items-center justify-between bg-white/5 p-5 rounded-2xl border border-white/5 active:bg-white/10 transition-all group">
                 <span className="text-white text-xl font-bold tracking-tight italic">Jogos Demo</span>
                 <span className="text-green-500">→</span>
               </a>
 
-              <a onClick={() => setIsOpen(false)} href="#" className="flex items-center justify-between bg-white/5 p-5 rounded-2xl border border-white/5 active:bg-white/10 transition-all group">
-                <span className="text-white text-xl font-bold tracking-tight italic">Dicas e Estratégias</span>
+              <a onClick={() => setIsOpen(false)} href="/tips-and-strategies" className="flex items-center justify-between bg-white/5 p-5 rounded-2xl border border-white/5 active:bg-white/10 transition-all group">
+                <span className="text-white text-xl font-bold tracking-tight italic">Dicas e estratégias</span>
+                <span className="text-green-500">→</span>
+              </a>
+
+              <a onClick={() => setIsOpen(false)} href="/about-us" className="flex items-center justify-between bg-white/5 p-5 rounded-2xl border border-white/5 active:bg-white/10 transition-all group">
+                <span className="text-white text-xl font-bold tracking-tight italic">Sobre nós</span>
                 <span className="text-green-500">→</span>
               </a>
             </nav>
@@ -173,7 +159,7 @@ export default function Header() {
             <div className="p-6 bg-white/[0.02] border-t border-white/5 backdrop-blur-sm">
               <a 
                 onClick={() => setIsOpen(false)}
-                href="#" 
+                href="/cassinos-com-pix" 
                 className="relative flex items-center justify-center w-full bg-gradient-to-r from-[#fbff00] to-[#00ff40] p-5 rounded-2xl text-black font-black text-lg uppercase italic tracking-tighter shadow-[0_10px_40px_rgba(0,255,64,0.3)]"
               >
                 <span>🚀 Cassinos com PIX</span>
