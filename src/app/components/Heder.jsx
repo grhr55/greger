@@ -57,37 +57,7 @@ export default function Header() {
     </div>
   </div>
 
-  {/* 3. PAGAMENTOS (ПАРТНЕРЫ С АКЦЕНТОМ НА ВЫВОД И PIX) */}
-  <div className="relative group py-4">
-    <button className="flex items-center gap-1 hover:text-green-500 transition-colors uppercase tracking-tighter font-black italic cursor-pointer">
-      Pagamentos
-      <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-300 text-green-500" />
-    </button>
-    <div className="absolute top-full right-0 mt-0 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pt-4">
-      <div className="bg-[#0a0a0a] border border-blue-500/20 rounded-2xl p-3 shadow-[0_10px_50px_rgba(0,123,255,0.2)] backdrop-blur-xl text-left">
-        <p className="text-[9px] text-zinc-500 font-black uppercase tracking-[2px] mb-3 ml-2 italic">Saque Rápido via PIX</p>
-        <div className="flex flex-col gap-2">
-          {leaders.slice(0, 3).map((leader) => (
-            <a key={leader.id} href={`/payment-methods/${leader.title}`} className="flex items-center justify-between p-3 bg-white/5 hover:bg-blue-500/10 border border-white/5 hover:border-blue-500/30 rounded-xl transition-all group/pay">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center p-1.5 border border-white/10 group-hover/pay:border-blue-500/50">
-                  <img src={leader.logo} alt={leader.title} className="w-full h-full object-contain" />
-                </div>
-                <div className="flex flex-col text-left">
-                  <span className="text-white text-[12px] font-black uppercase italic leading-none mb-1">{leader.title}</span>
-                  <div className="flex items-center gap-1">
-                    <Zap size={10} className="text-amber-400 fill-amber-400" />
-                    <span className="text-blue-400 text-[10px] font-bold tracking-tighter uppercase leading-none">{leader.pixrab}</span>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-green-500/10 px-2 py-0.5 rounded text-green-500 text-[8px] font-black uppercase italic">PIX</div>
-            </a>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
+
 
   <a href="/jogos-demo" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Jogos Demo</a>
   <a href="/tips-and-strategies" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Dicas e estratégias</a>
