@@ -7,7 +7,7 @@ import FooterBrasil from './FooterBrasil'
 
 export default function Catagordemogam() {
   return (
-    <section className=" bg-[#0b250c]">
+    <section className=" bg-[#061409]">
         <Hp/>
       <div className="max-w-7xl mx-auto px-4">
         
@@ -31,7 +31,7 @@ export default function Catagordemogam() {
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
                   src={game.imggame}
-                  alt={game.titlegame}
+                  alt={game.nickgame}
                   fill
                   className="object-cover transition-transform duration-700  group-hover:scale-110"
                 />
@@ -49,11 +49,9 @@ export default function Catagordemogam() {
               {/* Инфо блок */}
               <div className="p-6">
                 <h2 className="text-xl font-black uppercase italic text-white group-hover:text-green-500 transition-colors">
-                  {game.titlegame}
-                </h2>
-                <p className="text-zinc-500 text-xs font-bold uppercase tracking-widest mt-1">
                   {game.nickgame}
-                </p>
+                </h2>
+                
                 
             
                 <div className="mt-4 flex items-center justify-between">

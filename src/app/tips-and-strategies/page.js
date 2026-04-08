@@ -3,10 +3,11 @@ import Link from "next/link";
 import Hp from '../components/Hp'
 import { demogame } from "./demogame";
 import { BookOpen, Zap, ShieldCheck, TrendingUp } from "lucide-react";
+import FooterBrasil from '../jogos-demo/FooterBrasil'
 
 export default function Sovet() {
   return (
-    <section className="bg-[#050505] min-h-screen pb-20 overflow-hidden relative">
+    <section className="bg-[#061409] min-h-screen   overflow-hidden relative">
       <Hp />
       
       {/* Декоративный задний фон (зеленый туман) */}
@@ -15,7 +16,7 @@ export default function Sovet() {
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         
         {/* ЗАГОЛОВОК СЕКЦИИ: СТИЛЬ АНАЛИТИКИ */}
-        <div className="pt-20 mb-16 text-center md:text-left">
+        <div className="pt-20 max-[500px]:pt-10 mb-16 text-center md:text-left">
           <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 px-4 py-2 rounded-full mb-6">
             <Zap size={14} className="text-green-500 fill-green-500 animate-pulse" />
             <span className="text-[10px] font-black uppercase tracking-[3px] text-green-500">Centro de Inteligência</span>
@@ -31,12 +32,12 @@ export default function Sovet() {
         </div>
 
         {/* СЕТКА КАРТОЧЕК-СТАТЕЙ */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {demogame.map((game) => (
             <Link 
               key={game.id} 
               href={`/tips-and-strategies/${game.nickgame}`} 
-              className="group relative bg-[#0d0d0d] border border-white/5 rounded-[40px] p-2 hover:border-green-500/40 transition-all duration-500 shadow-2xl hover:shadow-green-500/10 flex flex-col"
+              className="group relative bg-[#000000] border border-white/5 rounded-[40px] p-2 hover:border-green-500/40 transition-all duration-500 shadow-2xl hover:shadow-green-500/10 flex flex-col"
             >
               {/* Контейнер для изображения */}
               <div className="relative aspect-[1/1] rounded-[32px] overflow-hidden">
@@ -68,7 +69,7 @@ export default function Sovet() {
               </div>
 
               {/* ИНФОРМАЦИЯ О СТРАТЕГИИ */}
-              <div className="p-6 flex flex-col flex-grow">
+              <div className="p-6 max-[500px]:p-3 flex flex-col flex-grow">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">{game.razrab}</span>
                   <div className="flex items-center gap-1">
@@ -77,7 +78,7 @@ export default function Sovet() {
                   </div>
                 </div>
 
-                <h2 className="text-2xl font-black uppercase italic text-white leading-tight mb-4 group-hover:text-green-500 transition-colors">
+                <h2 className="text-2xl max-[500px]:text-[17px] font-black uppercase italic text-white leading-tight mb-4 group-hover:text-green-500 transition-colors">
                   {game.titlegame}
                 </h2>
 
@@ -101,6 +102,7 @@ export default function Sovet() {
           ))}
         </div>
       </div>
+      <FooterBrasil/>
     </section>
   );
 }
