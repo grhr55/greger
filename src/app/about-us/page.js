@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Hp from '../components/Hp'
+import FooterBrasil from '../jogos-demo/FooterBrasil'
 
 export default function Onas() {
   const stats = [
@@ -19,7 +20,7 @@ export default function Onas() {
   return (
     <div className="bg-[#061409] text-white selection:bg-green-500/30 font-sans pb-20 overflow-x-hidden">
 
-    <Hp/>
+    <Hp />
       
  
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-green-600/10 blur-[150px] pointer-events-none z-0"></div>
@@ -221,8 +222,10 @@ export default function Onas() {
 
 
 
-      </main>
 
+      </main>
+      
+<FooterBrasil/>
     
       <div className="fixed bottom-0 left-0 w-full h-1.5 flex z-[100] shadow-[0_-5px_25px_rgba(0,151,57,0.4)]">
         <div className="flex-[3] bg-[#009739]"></div>

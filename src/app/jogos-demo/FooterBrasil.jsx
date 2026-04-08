@@ -71,10 +71,7 @@ export default function FooterBrasil() {
                 18+
               </div>
               {/* Сертификаты безопасности */}
-              <div className="flex gap-10 opacity-60 hover:opacity-100 transition-opacity">
-                 
-                 <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/MGA_logo.svg" alt="MGA" className="h-8" />
-              </div>
+             
            </div>
            
            {/* Официальный дисклеймер — КАПСОМ */}
