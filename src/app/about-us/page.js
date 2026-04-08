@@ -17,7 +17,7 @@ export default function Onas() {
     { label: "RTP Auditado", val: "98.8%" },
   ];
   return (
-    <div className="bg-[#0e1c11] text-white selection:bg-green-500/30 font-sans pb-20 overflow-x-hidden">
+    <div className="bg-[#061409] text-white selection:bg-green-500/30 font-sans pb-20 overflow-x-hidden">
 
     <Hp/>
       
@@ -207,7 +207,7 @@ export default function Onas() {
         </p>
         <div className="bg-green-500/10 p-8 rounded-3xl border border-green-500/20 mt-10">
            <p className="text-white font-medium text-xl italic mb-4">
-             "Meu objetivo é que você se divirta com responsabilidade e tenha a certeza de que, quando ganhar, o dinheiro estará na sua conta via PIX."
+             Meu objetivo é que você se divirta com responsabilidade e tenha a certeza de que, quando ganhar, o dinheiro estará na sua conta via PIX.
            </p>
            <p className="text-green-500 font-black uppercase tracking-[3px] text-xs">
              — Thiago Silva, Especialista em iGaming & Ex-Dev de Sistemas
