@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Hp from "../components/Hp";
+import FooterBrasil from '../jogos-demo/FooterBrasil'
 
 const casinoData = [
   {
@@ -229,12 +230,12 @@ function FeatureCard({ icon: Icon, title, text, color }) {
 
 export default function CassinosPix() {
   return (
-    <div className="bg-[#070707] min-h-screen text-white font-sans antialiased">
+    <div className="bg-[#061409] min-h-screen text-white font-sans antialiased">
 
        <Hp/>
 
       {/* ══ HERO ══ */}
-      <section className="relative pt-24 pb-20 px-4 overflow-hidden">
+      <section className="relative pt-13 max-[500px]:pt-10 pb-20 px-4 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[600px] bg-green-500/5 rounded-full blur-[100px]" />
           <div className="absolute top-20 right-0 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[80px]" />
@@ -310,7 +311,7 @@ export default function CassinosPix() {
       </section>
 
       {/* ══ ТАБЛИЦА ══ */}
-      <section className="max-w-6xl mx-auto px-4 pb-28">
+      <section className="max-w-6xl mx-auto px-4 ">
         <div className="flex items-center gap-3 mb-8">
           <ArrowRightLeft size={17} className="text-green-400" />
           <h2 className="text-sm font-black uppercase tracking-widest text-zinc-400">Comparativo Rápido</h2>
@@ -358,12 +359,13 @@ export default function CassinosPix() {
           </div>
         </div>
       </section>
+      <FooterBrasil/>
 
       {/* ══ ФЛАГ ══ */}
       <div className="fixed bottom-0 left-0 w-full h-[3px] flex z-50">
-        <div className="bg-[#009739] flex-1" />
-        <div className="bg-[#FEDD00] flex-1" />
-        <div className="bg-[#002776] flex-1" />
+        <div className="bg-[#009739] flex-3" />
+        <div className="bg-[#FEDD00] flex-3" />
+        
       </div>
     </div>
   );
