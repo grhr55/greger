@@ -30,7 +30,7 @@ export default function GameDetailPage({ params }) {
     <div className="bg-[#020202] min-h-screen text-white pb-24 selection:bg-[#009739]/30 font-sans overflow-x-hidden">
       <Hp />
       
-      {/* Фоновое свечение */}
+      
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-[#009739]/5 blur-[140px] pointer-events-none z-0"></div>
       
       <main className="max-w-6xl mx-auto px-4 pt-6 relative z-10">

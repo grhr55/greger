@@ -4,7 +4,7 @@ import Image from "next/image";
 import Sposok from "./Spisokpart";
 import leaders from './datapartnes'
 // Импортируем иконки для выпадающего меню
-import { ChevronDown, MessageSquare, Zap ,Star } from "lucide-react";
+import { ChevronDown,  Zap  } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -91,6 +91,7 @@ export default function Header() {
 
   <a href="/jogos-demo" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Jogos Demo</a>
   <a href="/tips-and-strategies" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Dicas e estratégias</a>
+  <a href="/about-us" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Sobre nós</a>
 
   <a 
     href="/cassinos-com-pix" 
