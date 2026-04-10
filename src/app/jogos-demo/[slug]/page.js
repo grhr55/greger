@@ -230,11 +230,10 @@ export default function GameDetailPage({ params }) {
         </section>
       </main>
 
-      {/* FOOTER FLAG */}
-      <div className="fixed bottom-0 left-0 w-full h-1.5 flex z-[100]">
+       <div className="fixed bottom-0 left-0 w-full h-1.5 flex z-[100] shadow-[0_-5px_25px_rgba(0,151,57,0.4)]">
         <div className="flex-[3] bg-[#009739]"></div>
-        <div className="flex-[2] bg-[#FEDD00]"></div>
-        <div className="flex-[3] bg-[#012169]"></div>
+        <div className="flex-[3] bg-[#FEDD00]"></div>
+        
       </div>
     </div>
   );

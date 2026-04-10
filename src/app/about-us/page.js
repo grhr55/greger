@@ -18,7 +18,7 @@ export default function Onas() {
     { label: "RTP Auditado", val: "98.8%" },
   ];
   return (
-    <div className="bg-[#061409] text-white selection:bg-green-500/30 font-sans pb-20 overflow-x-hidden">
+    <div className="bg-[#061409] text-white selection:bg-green-500/30 font-sans  overflow-x-hidden">
 
     <Hp />
       
