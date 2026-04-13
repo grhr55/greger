@@ -153,7 +153,7 @@ export default function Sovetgames({ params }) {
       {game.steps?.map((step, index) => (
         <div 
           key={index} 
-          className={`group bg-[#0d0d0d] p-8 rounded-[40px] border border-white/5 transition-all duration-500 ${step.color}`}
+          className={`group bg-[#0d0d0d] p-1 rounded-[40px] border border-white/5 transition-all duration-500 ${step.color}`}
         >
           <div className="flex flex-col md:flex-row gap-6 items-start">
             <div className="w-14 h-14 shrink-0 bg-white/5 text-white font-black flex items-center justify-center rounded-2xl border border-white/10 text-2xl italic group-hover:scale-110 transition-transform">
