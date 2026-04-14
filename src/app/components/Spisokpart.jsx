@@ -18,7 +18,7 @@ export default function Sposok() {
           <div className="flex justify-center gap-2 mt-2">
             <div className="h-1 w-16 bg-green-500 rounded-full"></div>
             <div className="h-1 w-16 bg-yellow-400 rounded-full"></div>
-            <div className="h-1 w-16 bg-blue-500 rounded-full"></div>
+          
           </div>
         </div>
 

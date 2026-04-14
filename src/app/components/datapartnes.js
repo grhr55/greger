@@ -70,7 +70,7 @@ Operando sob a licença de Curaçao, a 888STARZ utiliza criptografia de ponta pa
   {
     id:3,
     title: "Betano",
-    vozrast:"",
+    vozrast:"1999",
     description: "O gigante do mercado brasileiro. Possui as melhores odds para futebol e uma interface extremamente confiável e licenciada.",
     highlight: "Interface nota 10 e App Fluido.",
     fotopart:"/img/photo_2026-04-01_20-03-50.jpg",

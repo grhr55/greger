@@ -3,7 +3,7 @@ import { Check, Zap, Trophy, Star } from "lucide-react";
 
 export default function Sravnevs() {
   return (
-    <section className="bg-[#122913] py-20 px-4 selection:bg-green-500/30">
+    <section className=" px-4 selection:bg-green-500/30">
       <div className="max-w-6xl mx-auto">
         
         {/* --- HEADER --- */}
@@ -94,7 +94,7 @@ export default function Sravnevs() {
         </div>
 
         {/* --- WINNER VERDICT --- */}
-        <div className="mt-12 bg-gradient-to-br from-green-900/30 via-[#0a0a0a] to-blue-900/30 p-8 md:p-12 rounded-[48px] border border-white/10 relative overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+        <div className="mt-12 bg-gradient-to-br from-green-900/30 via-[#0a0a0a] to-blue-900/30 p-8 max-[500px]:p-5 rounded-[48px] border border-white/10 relative overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
           <div className="absolute top-0 right-0 w-64 h-64 bg-green-500/10 blur-[100px] rounded-full"></div>
           
           <div className="flex flex-col md:flex-row items-center justify-between gap-10 relative z-10">
@@ -120,7 +120,7 @@ export default function Sravnevs() {
             </div>
 
             {/* SCORE DISPLAY */}
-            <div className="flex flex-col items-center md:items-end gap-3 bg-black/40 backdrop-blur-xl p-8 rounded-[40px] border border-white/10 min-w-[200px] w-full md:w-auto shadow-inner">
+            <div className="flex flex-col items-center md:items-end gap-3 bg-black/40 backdrop-blur-xl p-8 max-[500px]:p-5 rounded-[40px] border border-white/10 min-w-[200px] w-full md:w-auto shadow-inner">
               <span className="text-zinc-500 text-[11px] font-black uppercase tracking-[5px] mb-2">Score Elite</span>
               <div className="flex items-baseline gap-2">
                 <span className="text-6xl md:text-7xl font-black italic text-green-500 tracking-tighter drop-shadow-[0_0_15px_rgba(34,197,94,0.5)]">1</span>

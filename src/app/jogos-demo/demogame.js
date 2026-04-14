@@ -3,10 +3,12 @@ export const demogame = [
 {
     id: 1,
     nickgame: "Jogo do Tigre",
+    titlegame: "Tigre",
     imggame: '/img/Airbrush-IMAGE-ENHANCER-1775136822948-1775136822948.jpg',
     razrab: 'PG Soft',
     slug: "fortune-tiger",
     gamedemo:"https://public.pg-demo.com/demo/?gi=126&lang=pt",
+    affiUrl:"https://rt.pornhub.com/",
     
     // Технические характеристики
     rtp: "96.81%",
@@ -42,6 +44,7 @@ export const demogame = [
     imggame: '/img/Airbrush-IMAGE-ENHANCER-1775146201945-1775146201945.jpg', // Проверь путь к картинке
     razrab: 'Pragmatic Play',
     slug: "sugar-rush-1000",
+    affiUrl:"https://rt.pornhub.com/",
     gamedemo:" https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?lang=pt&cur=USD&websiteUrl=https%3A%2F%2Fclienthub.pragmaticplay.com%2F&gcpif=2273&gameSymbol=vs20sugarrushx&jurisdiction=99&lobbyUrl=https://clienthub.pragmaticplay.com/slots/game-library/",
     
     // Технические характеристики
@@ -71,6 +74,7 @@ export const demogame = [
     imggame: '/img/SpeedRoletaBrasileira.webp', 
     razrab: 'Playtech / Evolution',
     slug: "roleta-brasileira",
+    affiUrl:"https://rt.pornhub.com/",
     gamedemo: "https://bgaming-network.com/play/EuropeanRoulette/FUN?server=demo&lang=pt", // Замени на рабочую ссылку демо
     
     // Технические характеристики
@@ -96,6 +100,7 @@ export const demogame = [
     id: 4,
     nickgame: "Jogo do Coelho",
     titlegame: "Fortune Rabbit",
+    affiUrl:"https://rt.pornhub.com/",
     imggame: '/img/Airbrush-IMAGE-ENHANCER-1775154469334-1775154469334.jpg', // Проверь путь к картинке с кроликом
     razrab: 'PG Soft',
     slug: "fortune-rabbit",
@@ -124,6 +129,7 @@ export const demogame = [
     id: 5,
     nickgame: "Mines Grátis",
     titlegame: "Mines Spribe",
+    affiUrl:"https://rt.pornhub.com/",
     imggame: '/img/mines.webp', // Фото с минами и кристаллами
     razrab: 'Spribe',
     slug: "mines",
@@ -153,6 +159,7 @@ export const demogame = [
     titlegame: "Lucky Jet 1win",
     imggame: '/img/Lucky-Jet.jpg', // Фото Сэма на реактивном ранце
     razrab: '1win Games',
+    affiUrl:"https://rt.pornhub.com/",
     slug: "lucky-jet",
     gamedemo: "https://1play.gamedev-tech.cc/lucky_grm/vgs/?b=18b25290aab013c253aacac70cfef9f502251d9371f0164d83bb093b8825c999f820d499845c2bb0656878852dd53f2f423ade68c6e2916242064d1e09c4d2315e3ea85fff6f065c5e9eb85635bffa9f5779a271588bb5b8f5348d024f694dccbff9d152f9382d9473819b4394c967ae67d58fe9a78f4531e63b9758116184a518ecda08fdd2dc7d002373ca422a932cb8704a2bb4347822f8eecfe9290f64d45cd5885f19fda3893124778d1c9766c5be3e1b87e2f6dbdcb4.fc2e4bcabeba12e0c241705c559bfa33.077dee8d-c923-4c02-9bee-757573662e69&language=pt&pid=1win&pik=019aa5d3-290c-7469-b133-89d1948a968c", // Замени на актуальную демо-ссылку
     
@@ -179,6 +186,7 @@ export const demogame = [
     id: 7,
     nickgame: "Jogo do Touro",
     titlegame: "Fortune Ox",
+    affiUrl:"https://rt.pornhub.com/",
     imggame: '/img/Airbrush-IMAGE-ENHANCER-1775155893823-1775155893823.jpg', // Фото золотого быка
     razrab: 'PG Soft',
     slug: "fortune-ox",
@@ -208,6 +216,7 @@ export const demogame = [
     titlegame: "Gates of Olympus",
     imggame: '/img/images (8) (1).jpeg', // Фото Зевса с молнией
     razrab: 'Pragmatic Play',
+    affiUrl:"https://rt.pornhub.com/",
     slug: "gates-of-olympus",
     gamedemo: "https://demogamesfree.pragmaticplay.net/hub-demo/openGame.do?lang=pt&cur=USD&websiteUrl=https%3A%2F%2Fslotslib.com&gameSymbol=vs20olympx&jurisdiction=99", 
     
@@ -234,6 +243,7 @@ export const demogame = [
     id: 9,
     nickgame: "Jogo do Dragão",
     titlegame: "Dragon Hatch",
+    affiUrl:"https://rt.pornhub.com/",
     imggame: '/img/images (9).jpeg', // Фото яиц дракона или Королевы
     razrab: 'PG Soft',
     slug: "dragon-hatch",
@@ -265,6 +275,7 @@ export const demogame = [
     imggame: '/img/aviator.webp', // Фото красного самолета
     razrab: 'Spribe',
     slug: "aviator",
+    affiUrl:"https://rt.pornhub.com/",
     gamedemo: "https://aviator-demo.spribegaming.com/?currency=USD&operator=demo&jurisdiction=CW&lang=EN&return_url=https%3A%2F%2Fspribe.co%2Fgames&user=48979&token=Z3lWU00TVE6PknBTGMoqLKKECg3i6iRa", 
     
     // Технические характеристики

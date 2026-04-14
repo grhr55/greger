@@ -27,7 +27,7 @@ export default function GameDetailPage({ params }) {
   };
 
   return (
-    <div className="bg-[#020202] min-h-screen text-white pb-24 selection:bg-[#009739]/30 font-sans overflow-x-hidden">
+    <div className="bg-[#061409] min-h-screen text-white pb-24 selection:bg-[#009739]/30 font-sans overflow-x-hidden">
       <Hp />
       
       
@@ -36,7 +36,7 @@ export default function GameDetailPage({ params }) {
       <main className="max-w-6xl mx-auto px-4 pt-6 relative z-10">
         
         {/* --- HEADER --- */}
-        <header className="flex flex-col md:flex-row items-center justify-between mb-8 bg-[#0a0a0a] p-4 md:p-6 rounded-[35px] border border-white/5 shadow-2xl">
+        <header className="flex flex-col md:flex-row items-center justify-between mb-8 bg-[#003909] p-4 md:p-6 rounded-[35px] border border-white/5 shadow-2xl">
           <div className="flex items-center gap-4 md:gap-6 w-full md:w-auto">
             <div className="relative w-20 h-20 md:w-24 md:h-24 shrink-0 p-1 bg-gradient-to-br from-[#FEDD00] to-[#009739] rounded-3xl shadow-lg">
                 <img src={game.imggame} alt={game.nickgame} className="object-cover w-full h-full rounded-[20px]" />
