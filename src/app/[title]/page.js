@@ -1,7 +1,9 @@
+
 import { leaders } from "../components/datapartnes";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import Hp from '../components/Hp';
+import Hp from "../components/Hp";
+import Futer from "../components/Futer";
 import { Star, ShieldCheck, Zap, Trophy, CreditCard, ChevronRight, Info, Coins } from "lucide-react";
 
 export default async function Page({ params }) {
@@ -12,15 +14,16 @@ export default async function Page({ params }) {
     (l) => l.title.toLowerCase() === decodedTitle.toLowerCase()
   );
 
+
   if (!leader) return notFound();
 
   return (
-    <div className="bg-[#050505] min-h-screen text-white pb-24 selection:bg-green-500/30 overflow-x-hidden">
+    <div className="bg-[#061409] min-h-screen text-white  selection:bg-green-500/30 overflow-x-hidden">
       <Hp />
       
       <main className="max-w-6xl mx-auto px-3 sm:px-4 pt-6 md:pt-12">
         
-        {/* --- HEADER BLOCK --- */}
+       
         <div className="relative mb-6 md:mb-10 p-[1px] bg-gradient-to-r from-white/10 to-transparent rounded-[30px] md:rounded-[40px]">
           <div className="bg-[#0a0a0a] rounded-[29px] md:rounded-[39px] p-5 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
             <div className="flex flex-col items-center md:items-start gap-4 md:gap-6 w-full md:w-auto">
@@ -31,15 +34,7 @@ export default async function Page({ params }) {
               </div>
               
               <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 w-full">
-                <div className="bg-black p-3 md:p-4 rounded-2xl md:rounded-3xl shadow-xl w-fit">
-                  <Image
-                    src={leader.logo}
-                    alt={leader.title}
-                    width={120}
-                    height={60}
-                    className="object-contain md:w-[160px] md:h-[60px]"
-                  />
-                </div>
+                
                 <div className="text-center md:text-left">
                   <h1 className="text-4xl sm:text-5xl md:text-8xl font-black uppercase italic tracking-tighter leading-tight md:leading-none mb-1">
                     {leader.title}
@@ -49,26 +44,26 @@ export default async function Page({ params }) {
               </div>
             </div>
 
-            {/* Рейтинг: на мобилках компактнее */}
+           
             <div className="bg-white/5 border border-white/10 p-4 md:p-6 rounded-[24px] md:rounded-[30px] text-center w-full md:w-auto">
               <div className="flex justify-center gap-1 text-yellow-400 mb-1 md:mb-2">
                 {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" className="md:w-[22px] md:h-[22px]" />)}
               </div>
-              <p className="text-lg md:text-2xl font-black italic">5.0 / 5.0</p>
+              <p className="text-lg md:text-2xl font-black italic">{leader.rating}/ 5.0</p>
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-10  items-start">
           
           <div className="lg:col-span-2 space-y-8 md:space-y-12">
             
-            {/* Большой Баннер */}
+            
             <div className="relative group overflow-hidden rounded-[30px] md:rounded-[40px] border border-white/10 shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent z-10"></div>
               <Image
                 src={leader.fotopart}
-                alt="Promoção"
+                alt={leader.title}
                 width={1200}
                 height={600}
                 className="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105 min-h-[200px]"
@@ -79,7 +74,7 @@ export default async function Page({ params }) {
               </div>
             </div>
 
-            {/* Текстовый блок Обзора */}
+          
             <section className="bg-[#0a0a0a] border border-white/5 rounded-[30px] md:rounded-[45px] p-6 md:p-14 relative overflow-hidden">
                <div className="absolute top-0 right-0 p-10 opacity-[0.02] pointer-events-none hidden md:block">
                   <Info size={200} />
@@ -100,16 +95,16 @@ export default async function Page({ params }) {
             </section>
           </div>
 
-          {/* SIDEBAR */}
-          <aside className="space-y-6">
-            <div className="md:sticky md:top-28 space-y-6">
+         
+          <aside className="space-y-6 lg:sticky lg:top-28 self-start">
+            
               
-              {/* Кнопка регистрации: теперь во всю ширину */}
-              <a href="#" className="group relative block w-full bg-green-500 p-0.5 rounded-[20px] md:rounded-3xl transition-transform active:scale-95">
+             
+              <button  className="group relative block w-full bg-green-500 p-0.5 rounded-[20px] md:rounded-3xl transition-transform active:scale-95">
                  <div className="bg-green-500 text-black font-black py-5 md:py-8 rounded-[18px] md:rounded-[22px] text-center text-lg md:text-2xl uppercase italic flex items-center justify-center gap-2 group-hover:bg-green-400 transition-colors">
                     Jogar Agora <ChevronRight size={24} strokeWidth={3} className="md:w-[28px]" />
                  </div>
-              </a>
+              </button>
 
               {/* Таблица характеристик */}
               <div className="bg-[#0a0a0a] border border-white/10 p-6 md:p-8 rounded-[30px] md:rounded-[40px]">
@@ -146,15 +141,15 @@ export default async function Page({ params }) {
               <p className="text-center text-[9px] md:text-[10px] text-zinc-700 font-bold uppercase tracking-widest leading-relaxed px-6 md:px-10">
                 Aposte com responsabilidade. Menores de 18 anos são proibidos.
               </p>
-            </div>
+           
           </aside>
 
          
 <section className="mt-10 space-y-6">
-  <div className="flex items-center gap-3 md:gap-4">
-    <div className="w-2 md:w-3 h-8 md:h-10 bg-blue-500 rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]"></div>
+  <div className="flex items-center pb-10 gap-3 md:gap-4">
+    <div className="w-2 md:w-3 h-8 md:h-10 bg-amber-400 rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]"></div>
     <h3 className="text-2xl md:text-3xl font-black uppercase italic tracking-tight">
-      Melhores Jogos <span className="text-blue-500">Popular</span>
+       Tabela de prós e contras <span className="text-blue-500">contras</span>
     </h3>
   </div>
 
@@ -162,14 +157,184 @@ export default async function Page({ params }) {
 </section>
 
 
-        </div>
-      </main>
 
-      {/* Флаг-акцент: всегда на виду */}
+
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+  {/* ПЛЮСЫ */}
+  <div className="bg-white/5 border border-green-500/20 rounded-2xl p-6">
+    <h3 className="text-green-400 font-black uppercase mb-4 text-lg">
+      ✔ Vantagens da {leader.title}
+    </h3>
+
+    <ul className="space-y-3 text-sm text-zinc-300">
+      <li>{leader.plis1}</li>
+      <li>{leader.plis2}</li>
+      <li>{leader.plis3}</li>
+      <li>{leader.plis4}</li>
+      <li>{leader.plis5}</li>
+      <li>{leader.plis6}</li>
+    </ul>
+  </div>
+
+  {/* МИНУСЫ */}
+  <div className="bg-white/5 border border-red-500/20 rounded-2xl p-6">
+    <h3 className="text-red-400 font-black uppercase mb-4 text-lg">
+      ✖ Desvantagens da {leader.title}
+    </h3>
+
+    <ul className="space-y-3 text-sm text-zinc-300">
+       <li>{leader.minus1}</li>
+        <li>{leader.minus2}</li>
+         <li>{leader.minus3}</li>
+          <li>{leader.minus4}</li>
+           <li>{leader.minus5}</li>
+    </ul>
+  </div>
+
+</div>
+
+
+ <div className="flex items-center pt-20 pb-5 gap-3 md:gap-4">
+    <div className="w-2 md:w-3 h-8 md:h-10 bg-amber-400 rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]"></div>
+    <h3 className="text-2xl md:text-3xl font-black uppercase italic tracking-tight">
+       Retirada de fundos <span className="text-blue-500">fundos</span>
+    </h3>
+  </div>
+
+<div className="bg-[#0a0a0a] border border-white/10 p-6 md:p-8 rounded-[30px] md:rounded-[40px] mt-6">
+
+  <h3 className="text-xs font-black uppercase tracking-[2px] text-zinc-500 mb-6">
+    💳 Saques Withdraw
+  </h3>
+
+  
+  <div className="flex flex-wrap gap-2 mb-6">
+    {leader.withdrawal.methods.map((m, i) => (
+      <span key={i} className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs text-white">
+        {m}
+      </span>
+    ))}
+  </div>
+
+ 
+  <div className="space-y-3 mb-6">
+    {leader.withdrawal.processing.map((item, i) => (
+      <div key={i} className="flex justify-between border-b border-white/5 pb-2">
+        <span className="text-zinc-500 text-xs uppercase">{item.label}</span>
+        <span className="text-white font-bold text-xs">{item.val}</span>
+      </div>
+    ))}
+  </div>
+
+  
+  <div className="text-xs text-zinc-500 mb-2 uppercase font-bold">
+    Moedas suportadas
+  </div>
+
+  <div className="flex flex-wrap gap-2">
+    {leader.withdrawal.currencies.crypto.map((c, i) => (
+      <span key={i} className="text-[10px] px-2 py-1 rounded bg-yellow-500/10 border border-yellow-500/20 text-yellow-300">
+        {c}
+      </span>
+    ))}
+
+    {leader.withdrawal.currencies.fiat.map((c, i) => (
+      <span key={i} className="text-[10px] px-2 py-1 rounded bg-blue-500/10 border border-blue-500/20 text-blue-300">
+        {c}
+      </span>
+    ))}
+  </div>
+
+</div>
+
+<div className="bg-gradient-to-b mt-10 from-[#0a0a0a] to-[#050505] border border-white/10 rounded-3xl p-6 md:p-10 space-y-8 text-white shadow-2xl">
+
+  
+  <div className="flex items-center gap-3">
+    <div className="w-2 h-10 bg-green-500 rounded-full shadow-[0_0_20px_rgba(34,197,94,0.4)]" />
+    <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight">
+      Condições de Saque
+    </h2>
+  </div>
+
+ 
+  <div className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition">
+    <h3 className="text-zinc-300 font-bold uppercase mb-4 tracking-wide">
+      Informações gerais
+    </h3>
+
+    <div className="space-y-3 text-sm text-zinc-300">
+      {leader.withdrawalTerms.general.map((item, i) => (
+        <p key={i} className="flex gap-3 leading-relaxed">
+          <span className="text-green-400 mt-1">●</span>
+          <span>{item}</span>
+        </p>
+      ))}
+    </div>
+  </div>
+
+  
+  <div className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition">
+    <h3 className="text-zinc-300 font-bold uppercase mb-4 tracking-wide">
+      Regras principais
+    </h3>
+
+    <div className="space-y-3 text-sm text-zinc-300">
+      {leader.withdrawalTerms.rules.map((item, i) => (
+        <p key={i} className="flex gap-3 leading-relaxed">
+          <span className="text-yellow-400 mt-1">●</span>
+          <span>{item}</span>
+        </p>
+      ))}
+    </div>
+  </div>
+
+  
+  <div className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition">
+    <h3 className="text-zinc-300 font-bold uppercase mb-4 tracking-wide">
+      Possíveis atrasos
+    </h3>
+
+    <div className="space-y-3 text-sm text-zinc-300">
+      {leader.withdrawalTerms.delays.map((item, i) => (
+        <p key={i} className="flex gap-3 leading-relaxed">
+          <span className="text-blue-400 mt-1">●</span>
+          <span>{item}</span>
+        </p>
+      ))}
+    </div>
+  </div>
+
+  <div className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition">
+    <h3 className="text-zinc-300 font-bold uppercase mb-4 tracking-wide">
+      Observações importantes
+    </h3>
+
+    <div className="space-y-3 text-sm text-zinc-300">
+      {leader.withdrawalTerms.notes.map((item, i) => (
+        <p key={i} className="flex gap-3 leading-relaxed">
+          <span className="text-red-400 mt-1">●</span>
+          <span>{item}</span>
+        </p>
+      ))}
+    </div>
+  </div>
+
+</div>
+
+
+
+      </main>
+      <Futer/>
+      
+
+     
       <div className="fixed bottom-0 left-0 w-full h-1 md:h-1.5 flex z-[100]">
-        <div className="flex-1 bg-[#009739]"></div>
-        <div className="flex-1 bg-[#FEDD00]"></div>
-        <div className="flex-1 bg-[#012169]"></div>
+        <div className="flex-3 bg-[#009739]"></div>
+        <div className="flex-3 bg-[#FEDD00]"></div>
+        
       </div>
     </div>
   );

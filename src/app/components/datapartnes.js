@@ -3,9 +3,10 @@ export const leaders = [
     {
     id:1,
     title: "1win",
+    affiUrl:'https://rt.pornhub.com/', 
     description: "Líder em bônus agressivos e jogos exclusivos como Lucky Jet. Uma escolha sólida para quem busca promoções diárias e giros grátis.",
     bonus: "Bônus de 500% no primeiro depósito.",
-    fotopart:"/img/photo_2026-04-01_15-08-48-removebg-preview.png",
+    fotopart:"/img/photo_2026-04-01_20-03-50.jpg",
     logo: "/img/photo_2026-04-01_15-08-48-removebg-preview.png",
     rating: 5.0,
     vozrast:"2018",
@@ -32,12 +33,69 @@ Diferencial Único: 1win TV. Já pensou em ter um cinema online dentro do cassin
 Pagamentos na Velocidade da Luz: Suporte total para PIX, cartões e criptomoedas, garantindo que seu dinheiro entre e saia com total confidencialidade e rapidez.
 
 O que você precisa saber Ponto de Atenção:
-A 1win é uma plataforma offshore internacional. Isso é uma vantagem enorme para quem busca liberdade, já que não há deduções fiscais automáticas sobre seus lucros. É o lugar perfeito para o jogador que valoriza cada centavo do seu prêmio, operando com total transparência e segurança global.`
+A 1win é uma plataforma offshore internacional. Isso é uma vantagem enorme para quem busca liberdade, já que não há deduções fiscais automáticas sobre seus lucros. É o lugar perfeito para o jogador que valoriza cada centavo do seu prêmio, operando com total transparência e segurança global.`,
+
+plis1:"⚡ Depósitos via PIX extremamente rápidos",
+plis2:"🎰 Grande catálogo de jogos (slots, crash, live casino)",
+plis3:"📱 App e site muito leves e responsivos",
+plis4:"💰 Bônus de boas-vindas alto para novos usuários",
+plis5:"🌍 Aceita criptomoedas e múltiplos métodos de pagamento",
+plis6:"🎮 Possui jogos exclusivos e esportes + eSports",
+
+minus1:'📌 Plataforma offshore (licença internacional, não local)',
+minus2:'⏳ Alguns bônus possuem regras de rollover altas',
+minus3:'🔐 Pode exigir verificação KYC para saques maiores',
+minus4:'🌐 Sites espelho podem confundir usuários em alguns países',
+minus5:'📉 Promoções variam muito por região',
+
+withdrawal: {
+  methods: ["PIX", "Cartões", "E-wallets", "Criptomoedas"],
+
+  processing: [
+    { label: "PIX", val: "Instantâneo – 1h" },
+    { label: "Cartões", val: "1–24h" },
+    { label: "Cripto", val: "10min – 12h" },
+    { label: "E-wallets", val: "até 24h" }
+  ],
+
+  currencies: {
+    fiat: ["BRL","USD","EUR","RUB","UAH","KZT","TRY","INR"],
+    crypto: ["USDT (TRC20)","USDT (ERC20)","BTC","ETH","TRX","LTC","XRP"]
+  }
+},
+withdrawalTerms: {
+  general: [
+    "Os saques podem exigir verificação de identidade (KYC) antes da primeira retirada ou em valores altos.",
+    "O tempo de processamento depende do método de pagamento escolhido e da verificação interna da plataforma.",
+    "Alguns métodos podem não estar disponíveis em todas as regiões."
+  ],
+
+  rules: [
+    "O valor mínimo e máximo de saque varia conforme o método e o status da conta.",
+    "Promoções e bônus podem exigir rollover antes do saque ser liberado.",
+    "Saques devem ser feitos utilizando o mesmo método usado para depósito (quando aplicável).",
+    "A plataforma pode solicitar documentos adicionais para segurança (AML/KYC)."
+  ],
+
+  delays: [
+    "Podem ocorrer atrasos em horários de alta demanda ou durante verificações de segurança.",
+    "Transferências bancárias podem levar mais tempo devido a intermediários financeiros.",
+    "Criptomoedas dependem da rede blockchain e podem variar conforme congestionamento."
+  ],
+
+  notes: [
+    "PIX geralmente é o método mais rápido disponível no Brasil.",
+    "Carteiras digitais tendem a ser mais rápidas que cartões bancários.",
+    "Todos os prazos são estimativas e podem variar conforme a operadora."
+  ]
+}
+
   },
   {
     id:2,
     title: "888starz",
     vozrast:"2020",
+    affiUrl:'https://rt.pornhub.com/', 
     description: "A maior plataforma de iGaming baseada em blockchain. Famosa por pagar dividendos aos jogadores e aceitar mais de 40 criptomoedas junto com o PIX.",
     highlight: "Pagamentos via PIX em segundos.",
     logo: "/img/photo_2026-04-02_10-56-41-removebg-preview.png", 
@@ -65,28 +123,318 @@ Catálogo Gigante: São mais de 3.500 slots de elite e uma seção de apostas es
 Bônus Massivo: O pacote de boas-vindas é um dos maiores do mercado mundial, turbinando seus primeiros quatro depósitos com valores impressionantes.
 
 Segurança e Licença de Ferro:
-Operando sob a licença de Curaçao, a 888STARZ utiliza criptografia de ponta para proteger cada centavo dos usuários. É a escolha definitiva para quem busca inovação tecnológica, transparência total nos pagamentos e quer ser recompensado por cada aposta feita.`
+Operando sob a licença de Curaçao, a 888STARZ utiliza criptografia de ponta para proteger cada centavo dos usuários. É a escolha definitiva para quem busca inovação tecnológica, transparência total nos pagamentos e quer ser recompensado por cada aposta feita.`,
+plis1: "⚡ Depósitos via PIX e criptomoedas com processamento rápido",
+plis2: "🎰 Grande variedade de jogos (slots, cassino ao vivo, apostas esportivas)",
+plis3: "📱 Plataforma moderna com navegação simples e responsiva",
+plis4: "💰 Bônus de boas-vindas agressivo e promoções frequentes",
+plis5: "🌍 Suporte a múltiplas criptomoedas e métodos de pagamento",
+plis6: "🎮 Integra cassino + apostas esportivas + jogos crash em um só lugar",
+
+minus1: "📌 Operador offshore com licença internacional (não brasileira)",
+minus2: "⏳ Termos de bônus podem incluir rollover alto e regras complexas",
+minus3: "🔐 Verificação de identidade (KYC) pode ser obrigatória para saques",
+minus4: "🌐 Acesso pode variar por região e uso de domínios espelho",
+minus5: "📉 Experiência e promoções podem mudar dependendo do país do usuário",
+withdrawal: {
+  methods: ["PIX","Cartões bancários (Visa/Mastercard)",
+    "Carteiras eletrônicas (Skrill, Neteller, Jeton, MiFinity)",
+    "Criptomoedas (BTC, ETH, USDT, LTC, TRX, XRP e outras)"],
+
+  processing: [
+   { label: "PIX", val: "15 min – 24h (geralmente em poucas horas)" },
+    { label: "Cartões", val: "1–3 dias úteis" },
+    { label: "Carteiras eletrônicas", val: "15 min – 2h" },
+    { label: "Cripto", val: "instantâneo – 15 min" }
+  ],
+
+  currencies: {
+    fiat: ["BRL", "USD", "EUR",
+      "RUB", "UAH", "KZT", "TRY", "INR",
+      "PKR", "BDT", "NGN", "KES"],
+    crypto: [
+      "BTC",
+      "ETH",
+      "USDT (TRC20)",
+      "USDT (ERC20)",
+      "TRX",
+      "LTC",
+      "XRP",
+      "DOGE",
+      "BCH",
+      "XMR"
+    ]
+  }
+},
+withdrawalTerms: {
+  general: [
+    "Os saques exigem verificação de identidade (KYC) antes da primeira retirada ou em valores elevados.",
+    "O tempo de processamento depende do método escolhido e do nível de verificação da conta.",
+    "Alguns métodos podem não estar disponíveis em todos os países ou regiões."
+  ],
+
+  rules: [
+    "O valor mínimo de saque varia conforme o método de pagamento utilizado.",
+    "Bônus ativos podem exigir rollover antes de permitir retirada de fundos.",
+    "O saque deve ser realizado, sempre que possível, pelo mesmo método utilizado para depósito.",
+    "A plataforma pode solicitar documentos adicionais para verificação de segurança (AML/KYC)."
+  ],
+
+  delays: [
+    "Saques podem demorar mais durante verificações de segurança ou alta demanda.",
+    "Transferências bancárias podem levar mais tempo devido a intermediários financeiros.",
+    "Criptomoedas dependem da rede blockchain e podem variar conforme congestionamento da rede."
+  ],
+
+  notes: [
+    "PIX (quando disponível) costuma ser o método mais rápido para usuários do Brasil.",
+    "Carteiras digitais geralmente processam mais rápido que cartões bancários.",
+    "Criptomoedas são uma das opções mais rápidas para retirada em plataformas internacionais.",
+    "Todos os prazos são estimativas e podem variar conforme o operador e a verificação da conta."
+  ]
+},
   },
   {
-    id:3,
-    title: "Betano",
-    vozrast:"1999",
-    description: "O gigante do mercado brasileiro. Possui as melhores odds para futebol e uma interface extremamente confiável e licenciada.",
-    highlight: "Interface nota 10 e App Fluido.",
-    fotopart:"/img/photo_2026-04-01_20-03-50.jpg",
-    logo: "/img/unnamed-removebg-preview.png", 
-    bonus: "Bônus de Boas-vindas R$500",
-    rating: 4.8,
-    tag: "Mais Popular",
-    ganename:'roceta',
-    color: "from-blue-600 to-blue-800",
-    bernd:"Você provavelmente já ouviu falar da 1win. Hoje, ela é uma das marcas que mais crescem, combinando uma casa de apostas com um cassino online completo",
-    logoStyle: "hue-rotate-[180deg] brightness-[1.2] drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]",
-    cardStyle: "border-blue-500/30 shadow-[0_0_20px_rgba(59,130,246,0.1)]",
-    colgame:"12000",
-    pixrab:"média",
-    kompania:" Você provavelmente já ouviu falar da 1win. Hoje, ela é uma das marcas que mais crescem, combinando uma casa de apostas com um cassino online completo. Vamos dar uma olhada em quem eles são e por que se tornaram tão populares.Da FirstBet a uma marca global: uma breve história A empresa foi lançada em 2016 com o nome FirstBet. No entanto, seu verdadeiro sucesso veio em 2018, quando a equipe passou por uma grande reformulação da marca e entrou no mercado com o nome 1win. A mudança de nome foi acompanhada por uma reformulação completa da plataforma: do design do site à expansão da mecânica de jogos. Desde então, o projeto ultrapassou os limites de uma simples casa de apostas e se transformou em um vasto ecossistema de entretenimento operando sob uma licença internacional de Curaçao. Quais são as principais vantagens da 1win? O que diferencia esta plataforma de centenas de concorrentes? Aqui estão alguns fatores objetivos: Multiplataforma. A 1win é um canivete suíço no mundo dos jogos de azar. Tem tudo: apostas clássicas e em eSports, milhares de slots licenciados, um cassino ao vivo com dealers ao vivo e até jogos exclusivos (como Lucky Jet e Tiger). Programa de fidelidade e bônus. A empresa é conhecida por uma das políticas de bônus mais agressivas. Um pacote de boas-vindas de até 500% no primeiro depósito é um incentivo poderoso para novos jogadores, permitindo que eles aumentem significativamente seu saldo inicial. Tecnologia. O site e os aplicativos móveis (iOS/Android) se destacam pela alta velocidade e interface intuitiva. Tudo funciona perfeitamente, sem menus confusos. Serviços adicionais. Um diferencial da 1win é seu próprio cinema online, a 1win TV. Usuários com saldo positivo podem assistir a estreias de filmes de alta qualidade sem anúncios, diretamente na plataforma. Flexibilidade de pagamento. A plataforma oferece suporte a dezenas de sistemas de pagamento, incluindo cartões bancários, carteiras eletrônicas e criptomoedas, garantindo pagamentos rápidos e confidencialidade. Em que você deve prestar atenção? Apesar de todas as vantagens, é importante lembrar que a 1win é uma plataforma offshore internacional. Isso oferece aos jogadores certa liberdade, já que não há deduções fiscais automáticas, mas exige cautela ao usar sites espelho em países onde o acesso direto ao site é restrito."
+  id: 3,
+  title: "1xSlots",
+  vozrast: 2018,
+  affiUrl:'https://rt.pornhub.com/', 
+  description: "Uma das plataformas mais conhecidas do mercado brasileiro, com grande variedade de jogos, slots e apostas esportivas, além de interface moderna e fluida.",
+  highlight: "Interface nota 10 e app extremamente fluido.",
+  fotopart: "/img/photo_2026-04-01_20-03-50.jpg",
+  logo: "/img/images-removebg-preview.png",
+
+  bonus: "Bônus de boas-vindas de até R$500",
+  rating: 4.8,
+  tag: "Mais Popular",
+
+  logoStyle: "drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]",
+  cardStyle: "border-yellow-500/30 shadow-[0_0_20px_rgba(251,191,36,0.1)]",
+
+  ganename: "roceta",
+  colgame: "7000",
+  pixrab: "média",
+
+  bernd: "Se você está cansado de promessas vazias, a 1xSlots chega com uma proposta mais completa para o público brasileiro, reunindo cassino, slots e apostas esportivas em uma única plataforma.",
+
+  kompania: `
+1xSlots: uma plataforma completa de iGaming
+
+A 1xSlots é uma casa de apostas e cassino online que combina vários tipos de entretenimento em um único ecossistema: apostas esportivas, slots e jogos ao vivo.
+
+O que a plataforma oferece:
+- Grande variedade de jogos, com milhares de slots disponíveis
+- Cassino ao vivo com dealers reais
+- Interface moderna e fácil de usar
+- Aplicativo para dispositivos móveis com boa fluidez
+- Diversos métodos de pagamento, incluindo PIX e carteiras digitais
+
+Bônus e promoções:
+A plataforma costuma oferecer bônus de boas-vindas e promoções para novos usuários, que podem variar conforme campanhas ativas.
+
+Experiência do usuário:
+A navegação é simples, com carregamento rápido e design otimizado para celular e desktop, o que facilita o uso mesmo para iniciantes.
+
+Observação importante:
+Por ser uma plataforma internacional, as condições de acesso, bônus e disponibilidade podem variar de acordo com a região do usuário.
+`,
+plis1: "🎰 Grande variedade de jogos (mais de 10.000 slots, cassino ao vivo, crash e jogos de mesa)",
+plis2: "⚡ Registro rápido e interface simples e intuitiva",
+plis3: "💳 Suporte a diversos métodos de pagamento, incluindo PIX e criptomoedas",
+plis4: "📱 Site e versão mobile bem otimizados",
+plis5: "🌍 Plataforma internacional com suporte a vários idiomas",
+plis6: "🎁 Bônus frequentes e programa VIP para jogadores ativos",
+
+minus1: "📌 Licença de Curaçao (regulação offshore, não brasileira)",
+minus2: "⏳ Bônus com requisitos de rollover altos e regras mais rígidas",
+minus3: "🔐 Verificação KYC obrigatória para saques maiores",
+minus4: "📉 Alguns usuários relatam atrasos em retiradas em determinadas situações",
+minus5: "🌐 Suporte ao cliente pode variar dependendo do horário e idioma",
+//раздел способ вывода средств
+withdrawal: {
+  methods: [
+    "PIX",
+    "Cartões bancários (Visa/Mastercard)",
+    "Carteiras eletrônicas (Skrill, Neteller, Jeton, MiFinity)",
+    "Criptomoedas (BTC, ETH, USDT, LTC, TRX, XRP e outras)"
+  ],
+
+  processing: [
+    { label: "PIX", val: "15 min – 24h (geralmente em poucas horas)" },
+    { label: "Cartões", val: "1–3 dias úteis" },
+    { label: "Carteiras eletrônicas", val: "15 min – 2h" },
+    { label: "Cripto", val: "instantâneo – 15 min" }
+  ],
+
+  currencies: {
+    fiat: [
+      "BRL", "USD", "EUR",
+      "RUB", "UAH", "KZT", "TRY", "INR",
+      "PKR", "BDT", "NGN", "KES"
+    ],
+    crypto: [
+      "BTC",
+      "ETH",
+      "USDT (TRC20)",
+      "USDT (ERC20)",
+      "TRX",
+      "LTC",
+      "XRP",
+      "DOGE",
+      "BCH",
+      "XMR"
+    ]
+  }
+},
+withdrawalTerms: {
+  general: [
+    "Os saques geralmente exigem verificação de identidade (KYC), especialmente no primeiro saque ou em valores altos.",
+    "O tempo de processamento depende do método de pagamento escolhido e do nível de verificação da conta.",
+    "Alguns métodos podem não estar disponíveis em todas as regiões do usuário."
+  ],
+
+  rules: [
+    "O valor mínimo de saque varia conforme o método (PIX, cartões, carteiras eletrônicas ou criptomoedas).",
+    "Bônus ativos precisam de rollover completo antes de permitir saque de fundos bônus.",
+    "Sempre que possível, o saque deve ser feito pelo mesmo método utilizado no depósito.",
+    "A plataforma pode solicitar documentos adicionais por motivos de segurança (AML/KYC)."
+  ],
+
+  delays: [
+    "Saques podem ficar pendentes durante verificações de segurança ou análise manual da conta.",
+    "Cartões bancários podem demorar mais devido ao processamento do banco emissor.",
+    "PIX pode ser rápido, mas ainda pode sofrer retenções internas da plataforma em caso de análise.",
+    "Criptomoedas dependem da confirmação da rede blockchain e podem variar em tempo de congestionamento."
+  ],
+
+  notes: [
+    "PIX normalmente é o método mais rápido para usuários no Brasil quando liberado pela plataforma.",
+    "E-wallets como Skrill ou Neteller costumam ter processamento mais rápido que bancos tradicionais.",
+    "Criptomoedas geralmente oferecem maior velocidade e menos intermediários.",
+    "Todos os prazos são estimativas e podem variar conforme verificação e políticas internas da operadora."
+  ]
+},
+
+},
+{
+  id: 4,
+  title: "Brazino777",
+  year: 2018,
+  affiUrl:'https://rt.pornhub.com/', 
+  description: "Uma das plataformas mais populares no Brasil, conhecida por seu foco em jogos rápidos, slots e promoções frequentes para usuários ativos.",
+  highlight: "Promoções constantes e grande volume de jogos disponíveis.",
+  fotopart: "/img/photo_2026-04-01_20-03-50.jpg",
+  logo: "/img/images__1_-removebg-preview.png",
+
+  bonus: "Bônus de boas-vindas de até R$500",
+  rating: 4.8,
+  tag: "Mais Popular",
+
+  logoStyle: "drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]",
+  cardStyle: "border-yellow-500/30 shadow-[0_0_20px_rgba(251,191,36,0.1)]",
+
+  ganename: "roceta",
+  colgame: "7000",
+  pixrab: "média",
+
+  bernd: "Brazino777 é uma plataforma bastante conhecida no Brasil, voltada para entretenimento com apostas esportivas e jogos de cassino.",
+
+  kompania: `
+Brazino777: plataforma de cassino e apostas esportivas
+
+A Brazino777 é uma casa de apostas e cassino online que ganhou popularidade no mercado brasileiro por oferecer uma experiência simples e focada em jogos rápidos.
+
+O que a plataforma oferece:
+- Grande variedade de slots e jogos de cassino
+- Apostas esportivas em diferentes modalidades
+- Promoções frequentes e bônus para jogadores ativos
+- Interface simples e fácil de usar, tanto no celular quanto no computador
+- Sistema otimizado para jogos rápidos e rodadas curtas
+
+Experiência do usuário:
+A plataforma é conhecida por sua navegação simples e foco em entretenimento rápido, o que atrai usuários que preferem jogos dinâmicos.
+
+Pagamentos:
+Em geral, oferece métodos populares no Brasil, incluindo PIX e carteiras digitais, com foco em depósitos e saques rápidos (dependendo da verificação da conta).
+
+Observação:
+Como outras plataformas do setor, as condições de bônus e disponibilidade podem variar conforme a região e campanhas ativas.
+`,
+plis1: "🎰 Grande variedade de jogos (slots, roleta, blackjack, cassino ao vivo e apostas esportivas)",
+plis2: "⚡ Depósitos via PIX rápidos e geralmente processados em poucos minutos",
+plis3: "📱 Plataforma otimizada para mobile com navegação simples",
+plis4: "💰 Promoções e bônus frequentes para novos e jogadores ativos",
+plis5: "🕒 Suporte ao cliente disponível 24/7 em português",
+plis6: "🔐 Sistema de segurança com verificação de conta (KYC)",
+
+minus1: "📌 Operador com licença internacional (estrutura offshore, não regulamentação brasileira)",
+minus2: "⏳ Bônus podem ter rollover e regras de liberação mais rígidas",
+minus3: "🔐 Saques maiores exigem verificação de identidade obrigatória",
+minus4: "📉 Tempo de retirada pode variar dependendo do método e análise da conta",
+minus5: "🌐 Algumas promoções não estão disponíveis para todos os usuários ou regiões",
+withdrawal: {
+  methods: [
+    "PIX (Brasil)",
+    "Cartões bancários (Visa/Mastercard)",
+    "Carteiras eletrônicas (varia por região)",
+    "Criptomoedas (em algumas campanhas/regiões)"
+  ],
+
+  processing: [
+    { label: "PIX", val: "Instantâneo – até 24h (mais comum: poucas horas)" },
+    { label: "Cartões", val: "1–5 dias úteis" },
+    { label: "Carteiras eletrônicas", val: "até 24h" },
+    { label: "Cripto", val: "10 min – 24h (dependendo da rede)" }
+  ],
+
+  currencies: {
+    fiat: [
+      "BRL", "USD", "EUR",
+      "RUB", "UAH", "KZT", "TRY", "INR",
+      "PKR", "BDT", "NGN", "KES"
+    ],
+    crypto: [
+      "BTC",
+      "ETH",
+      "USDT (TRC20)",
+      "USDT (ERC20)",
+      "TRX",
+      "LTC",
+      "XRP"
+    ]
   },
+
+},
+withdrawalTerms: {
+  general: [
+    "Os saques exigem verificação de identidade (KYC) antes da primeira retirada ou em casos de valores mais altos.",
+    "O processamento depende do método de pagamento escolhido e da análise interna da conta.",
+    "Todos os saques devem ser feitos para contas e métodos registrados no nome do próprio usuário."
+  ],
+
+  rules: [
+    "O valor mínimo de saque varia conforme o método (PIX, bancos, carteiras digitais ou cripto).",
+    "Bônus ativos podem exigir rollover completo antes de liberar retirada de fundos.",
+    "O saque deve ser solicitado pelo mesmo método utilizado no depósito, quando aplicável.",
+    "A plataforma pode solicitar documentos adicionais para verificação de segurança (AML/KYC)."
+  ],
+
+  delays: [
+    "PIX geralmente é processado rapidamente, podendo levar de minutos até poucas horas dependendo da análise.",
+    "Transferências bancárias podem levar de 1 a 5 dias úteis conforme o banco.",
+    "Carteiras digitais e cripto podem ser mais rápidas, mas dependem de verificação e rede.",
+    "Em horários de alta demanda, os saques podem ficar em fila de processamento."
+  ],
+
+  notes: [
+    "PIX é o método mais rápido e mais utilizado no Brasil dentro da plataforma.",
+    "Saques são geralmente mais rápidos após a verificação completa da conta.",
+    "Criptomoedas e carteiras digitais podem reduzir tempo de processamento em comparação a bancos.",
+    "Todos os prazos são estimativas e podem variar conforme análise de segurança."
+  ]
+}
+}
+
   
 ];
 
