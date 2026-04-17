@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Hp from "../components/Hp";
-import FooterBrasil from '../jogos-demo/FooterBrasil'
+import FooterBrasil from '../slots/FooterBrasil'
 
 const casinoData = [
   {

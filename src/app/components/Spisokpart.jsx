@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+
 import Image from "next/image";
 import {leaders} from './datapartnes'
 import Obzornik from './Obzorpart'
@@ -39,7 +39,8 @@ export default function Sposok() {
                 {index + 1}
               </div>
 
-              <div className="flex flex-col md:flex-row items-center p-6 gap-6">
+              <div>
+                <div className="flex flex-col md:flex-row items-center p-6 gap-6">
                 
                
                 <div className="w-40 h-20 relative flex items-center justify-center bg-black/40 rounded-xl p-4 border border-white/5">
@@ -65,7 +66,8 @@ export default function Sposok() {
                     </div>
                   </div>
                   <h2 className="text-2xl font-black text-white">{item.bonus}</h2>
-                  <p className="text-zinc-500 text-sm">Pagamento instantâneo via PIX ✅</p>
+                  <p className="text-zinc-500 pt-2 text-sm">Pagamento instantâneo via PIX ✅</p>
+                 
                 </div>
 
             <div className="bg-white/5 border border-white/10 p-4 md:p-6 rounded-[24px] md:rounded-[30px] text-center w-full md:w-auto">
@@ -90,6 +92,10 @@ export default function Sposok() {
                   </button>
                   <p className="text-[10px] text-zinc-600 text-center uppercase font-bold">T&Cs se aplicam</p>
                 </div>
+                
+              </div>
+              <p className="text-zinc-400 pt-1 text-sm px-6 pb-3"> 🔞 Apenas para maiores de 18 anos. O jogo pode causar dependência. Jogue com responsabilidade. Não aposte dinheiro que você não pode perder. Apostas não garantem lucro. </p>
+
               </div>
 
              

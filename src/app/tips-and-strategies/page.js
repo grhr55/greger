@@ -3,7 +3,7 @@ import Link from "next/link";
 import Hp from '../components/Hp'
 import { demogame } from "./demogame";
 import { BookOpen, Zap, ShieldCheck, TrendingUp } from "lucide-react";
-import FooterBrasil from '../jogos-demo/FooterBrasil'
+import FooterBrasil from '../slots/FooterBrasil'
 
 export default function Sovet() {
   return (

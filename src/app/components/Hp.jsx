@@ -59,7 +59,7 @@ export default function Header() {
      
       
      
-       <a href="/jogos-demo" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Jogos Demo</a>
+       <a href="/slots" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Slots</a>
        <a href="/tips-and-strategies" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Dicas e estratégias</a>
        <a href="/about-us" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Sobre nós</a>
      

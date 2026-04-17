@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Hp from '../components/Hp'
-import FooterBrasil from '../jogos-demo/FooterBrasil'
+import FooterBrasil from '../slots/FooterBrasil'
 
 export default function Onas() {
   const stats = [

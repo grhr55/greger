@@ -3,7 +3,6 @@ import { useState } from "react";
 import Image from "next/image";
 import Sposok from "./Spisokpart";
 import leaders from './datapartnes'
-// Импортируем иконки для выпадающего меню
 import { ChevronDown,  Zap  } from "lucide-react";
 
 export default function Header() {
@@ -29,9 +28,6 @@ export default function Header() {
           <nav className="hidden md:flex items-center gap-8 text-amber-50 font-bold text-[14px]">
            
           
-         
-         
-           {/* 2. BÔNUS (ПАРТНЕРЫ С ИХ БОНУСАМИ) */}
            <div className="relative group py-4">
              <button className="flex items-center gap-1 hover:text-green-500 transition-colors uppercase tracking-tighter font-black italic cursor-pointer text-green-500">
                Bônus
@@ -61,7 +57,7 @@ export default function Header() {
          
           
          
-           <a href="/jogos-demo" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Jogos Demo</a>
+           <a href="/slots" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Slots</a>
            <a href="/tips-and-strategies" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Dicas e estratégias</a>
            <a href="/about-us" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Sobre nós</a>
          

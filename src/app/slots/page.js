@@ -24,7 +24,7 @@ export default function Catagordemogam() {
         <div className="flex items-center gap-3 pt-15 mb-10">
           <div className="w-2 h-10 bg-green-500 rounded-full shadow-[0_0_15px_rgba(34,197,94,0.4)]"></div>
           <h1 className="text-3xl md:text-4xl font-black uppercase italic text-white tracking-tight">
-            Jogos <span className="text-green-500">Populares</span>
+            Jogos <span className="text-green-500">slots</span>
           </h1>
         </div>
 
@@ -50,7 +50,7 @@ export default function Catagordemogam() {
       {/* ══ КНОПКИ ПРИ НАВЕДЕНИИ ══ */}
       <div className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-3 px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40 backdrop-blur-[2px]">
         <Link 
-          href={`/jogos-demo/${game.slug}`}
+          href={`/slots/${game.slug}`}
           className="w-full py-3 bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md text-white text-[11px] font-black uppercase tracking-tighter rounded-2xl text-center transition-all transform translate-y-4 group-hover:translate-y-0"
         >
           Jogar Demo

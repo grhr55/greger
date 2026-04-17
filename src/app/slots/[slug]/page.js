@@ -193,7 +193,7 @@ export default function GameDetailPage({ params }) {
             {demogame.map((game) => (
               <Link 
                 key={game.id} 
-                href={`/jogos-demo/${game.slug}`} 
+                href={`/slots/${game.slug}`} 
                 className="group relative bg-[#0a0a0a] border border-white/5 rounded-[30px] md:rounded-[45px] overflow-hidden hover:border-[#009739]/50 transition-all duration-500 shadow-2xl"
               >
                 <div className="relative aspect-[4/5] overflow-hidden">
