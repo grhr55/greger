@@ -88,6 +88,52 @@ withdrawalTerms: {
     "Carteiras digitais tendem a ser mais rápidas que cartões bancários.",
     "Todos os prazos são estimativas e podem variar conforme a operadora."
   ]
+},
+fotoreger:'/img/photo_2026-04-18_12-49-54.jpg',
+pravilareg: {
+  fast: {
+    title: "⚡ Método 1 – Registro rápido",
+    desc: "Este é o método principal e mais seguro. A conta é vinculada imediatamente aos seus dados, reduzindo riscos em saques grandes.",
+    
+    steps: [
+      {
+        label: "📧 Email e Telefone",
+        val: "Informe um e-mail válido e número de celular ativo."
+      },
+      {
+        label: "🔐 Senha",
+        val: "Crie sua própria senha — o sistema não gera mais combinações aleatórias."
+      },
+      {
+        label: "💱 Moeda",
+        val: "Escolha apenas uma vez (BRL, USD, EUR, RUB, UAH, KZT, INR, etc + крипто: BTC, ETH, USDT TRC20/ERC20, TRX, LTC, XRP)."
+      },
+      {
+        label: "🎁 Promocódigo",
+        val: "Em 2026 é obrigatório para bônus. Campo oculto em «+ Adicionar código»."
+      }
+    ]
+  },
+
+  social: {
+    title: "📲 Método 2 – Redes sociais e mensageiros",
+    desc: "Forma mais rápida. O sistema copia automaticamente seus dados do perfil escolhido.",
+
+    steps: [
+      {
+        label: "🌐 Serviços disponíveis",
+        val: "Telegram, Google,Steam"
+      },
+      {
+        label: "⚙️ Como funciona",
+        val: "Escolha o serviço, confirme no app e a conta é criada instantaneamente."
+      },
+      {
+        label: "⚠️ Importante",
+        val: "Use dados reais na rede social para evitar problemas na verificação (KYC)."
+      }
+    ]
+  }
 }
 
   },
@@ -193,6 +239,56 @@ withdrawalTerms: {
     "Todos os prazos são estimativas e podem variar conforme o operador e a verificação da conta."
   ]
 },
+fotoreger:'/img/photo_2026-04-02_11-28-52.jpg',
+pravilareg: {
+  fast: {
+    title: "⚡ Método 1 – Registro clássico",
+    desc: "Método mais confiável. Permite usar todos os recursos da conta sem limitações.",
+
+    steps: [
+      {
+        label: "📧 Email ou Telefone",
+        val: "Cadastro usando e-mail válido ou número de celular."
+      },
+      {
+        label: "🔐 Senha",
+        val: "Criação de senha pessoal segura."
+      },
+      {
+        label: "🌍 Moeda",
+        val: "Definida automaticamente (BRL para Brasil) ou escolhida manualmente."
+      },
+      {
+        label: "🎁 Código promocional",
+        val: "Opcional para ativar bônus de boas-vindas."
+      }
+    ]
+  },
+
+  social: {
+    title: "⚡ Método 2 – Registro em 1 clique",
+    desc: "Forma mais rápida de criar conta sem preencher formulário manualmente.",
+
+    steps: [
+      {
+        label: "📲 Registro rápido",
+        val: "Conta criada em poucos segundos com apenas um clique."
+      },
+      {
+        label: "🌐 Redes suportadas",
+        val: "Google e иногда Telegram (dependendo da região)."
+      },
+      {
+        label: "⚙️ Como funciona",
+        val: "Você confirma acesso ao perfil e o sistema importa seus dados automaticamente."
+      },
+      {
+        label: "⚠️ Importante",
+        val: "Dados devem ser reais para evitar problemas em saques (KYC)."
+      }
+    ]
+  }
+}
   },
   {
   id: 3,
@@ -314,6 +410,57 @@ withdrawalTerms: {
     "Todos os prazos são estimativas e podem variar conforme verificação e políticas internas da operadora."
   ]
 },
+fotoreger:'/img/photo_2026-04-18_13-53-53.jpg',
+pravilareg: {
+  fast: {
+    title: "⚡ Método 1 – Registro completo",
+    desc: "Método padrão e mais seguro. Permite controle total da conta e facilita saques futuros.",
+
+    steps: [
+      {
+        label: "📧 Email ou Telefone",
+        val: "Cadastro via e-mail válido ou número de celular."
+      },
+      {
+        label: "🔐 Senha",
+        val: "Criação manual de senha segura pelo usuário."
+      },
+      {
+        label: "🌍 País e Moeda",
+        val: "Moeda definida automaticamente (BRL no Brasil) ou escolhida manualmente."
+      },
+      {
+        label: "🎁 Código promocional",
+        val: "Opcional para ativar bônus de boas-vindas."
+      }
+    ]
+  },
+
+  social: {
+    title: "⚡ Método 2 – Registro rápido (1 clique)",
+    desc: "Permite criar conta em segundos utilizando serviços externos.",
+
+    steps: [
+      {
+        label: "📲 Registro instantâneo",
+        val: "Conta criada rapidamente sem preencher formulário completo."
+      },
+      {
+        label: "🌐 Redes disponíveis",
+        val: "Google, Telegram, VK, OK, Mail.ru (dependendo da região)."
+      },
+      {
+        label: "⚙️ Como funciona",
+        val: "Você autoriza o acesso e o sistema importa automaticamente seus dados."
+      },
+      {
+        label: "⚠️ Importante",
+        val: "Use dados reais para evitar problemas na verificação (KYC)."
+      }
+    ]
+  }
+}
+
 
 },
 {
@@ -432,6 +579,57 @@ withdrawalTerms: {
     "Criptomoedas e carteiras digitais podem reduzir tempo de processamento em comparação a bancos.",
     "Todos os prazos são estimativas e podem variar conforme análise de segurança."
   ]
+},
+fotoreger:'/img/photo_2026-04-18_13-54-01.jpg',
+
+pravilareg: {
+  fast: {
+    title: "⚡ Método 1 – Cadastro clássico",
+    desc: "Método principal e mais seguro. Permite acesso completo à conta e evita problemas em saques.",
+
+    steps: [
+      {
+        label: "📧 Email e Telefone",
+        val: "Cadastro com e-mail válido e número de celular com confirmação por código."
+      },
+      {
+        label: "🔐 Senha",
+        val: "Criação de uma senha pessoal segura para acesso à conta."
+      },
+      {
+        label: "👤 Dados pessoais",
+        val: "Nome completo, CPF e data de nascimento são solicitados."
+      },
+      {
+        label: "🛂 Verificação (KYC)",
+        val: "Envio de documento e selfie para liberar depósitos e saques."
+      }
+    ]
+  },
+
+  social: {
+    title: "📲 Método 2 – Cadastro rápido",
+    desc: "Forma mais simples de criar conta, mas a verificação completa será necessária depois.",
+
+    steps: [
+      {
+        label: "⚡ Registro rápido",
+        val: "Conta criada em poucos minutos diretamente no site."
+      },
+      {
+        label: "📲 Confirmação",
+        val: "Código enviado por SMS ou e-mail para ativar a conta."
+      },
+      {
+        label: "⚙️ Como funciona",
+        val: "Você preenche apenas os dados básicos e confirma o contato."
+      },
+      {
+        label: "⚠️ Importante",
+        val: "Sem verificação completa, saques podem ser limitados."
+      }
+    ]
+  }
 }
 }
 

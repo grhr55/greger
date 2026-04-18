@@ -1,5 +1,6 @@
 import { leaders } from "./datapartnes";
 import { Check, Zap, Trophy } from "lucide-react";
+import Sposobreg from './Sposobreg'
 
 export default function Sravnevs() {
   return (
@@ -36,7 +37,7 @@ export default function Sravnevs() {
               {leaders.map((leader) => (
                 <tr
                   key={leader.id}
-                  className="bg-slate-900 hover:bg-[#121212] transition rounded-2xl"
+                  className="bg-[#080707] hover:bg-[#152733] transition rounded-2xl"
                 >
 
                   {/* PLATFORM */}
@@ -106,8 +107,8 @@ export default function Sravnevs() {
               <h2 className="text-xl md:text-3xl font-black text-white uppercase">
                 Vencedor: <span className="text-green-500">{leaders[0].title}</span>
               </h2>
-              <p className="text-zinc-500 text-xs md:text-sm mt-1">
-                Melhor performance geral em 2026
+              <p className="text-amber-50 text-xs md:text-sm mt-1">
+               1 rodada {leaders[0].title} pela resposta rápida e pelo extenso banco de dados de jogos da PIX.
               </p>
             </div>
           </div>
@@ -120,6 +121,9 @@ export default function Sravnevs() {
         </div>
 
       </div>
+
+      <Sposobreg/>
+
     </section>
   );
 }
