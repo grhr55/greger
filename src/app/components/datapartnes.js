@@ -10,7 +10,7 @@ export const leaders = [
     logo: "/img/photo_2026-04-01_15-08-48-removebg-preview.png",
     rating: 5.0,
     vozrast:"2018",
-    colgame:"12000",
+    colgame:"12 000",
     pixrab:"Instantâneo",
     ganename:'roceta',
     tag: "Grandes Odds",
@@ -107,7 +107,7 @@ withdrawalTerms: {
     logoStyle: "drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]", 
     cardStyle: "border-yellow-500/30 shadow-[0_0_20px_rgba(251,191,36,0.1)]",
     ganename:'roceta',
-    colgame:"7000",
+    colgame:"10 000",
     pixrab:"média",
     bernd:"Se você está cansado de promessas vazias, a 888STARZ chegou para mudar o jogo no Brasil. Esqueça tudo o que você sabe sobre cassinos convencionais.",
    kompania: `888STARZ: O Cassino que te paga para jogar literalmente
@@ -197,7 +197,7 @@ withdrawalTerms: {
   {
   id: 3,
   title: "1xSlots",
-  vozrast: 2018,
+  vozrast: 2017,
   affiUrl:'https://rt.pornhub.com/', 
   description: "Uma das plataformas mais conhecidas do mercado brasileiro, com grande variedade de jogos, slots e apostas esportivas, além de interface moderna e fluida.",
   highlight: "Interface nota 10 e app extremamente fluido.",
@@ -212,7 +212,7 @@ withdrawalTerms: {
   cardStyle: "border-yellow-500/30 shadow-[0_0_20px_rgba(251,191,36,0.1)]",
 
   ganename: "roceta",
-  colgame: "7000",
+  colgame: " 9 500",
   pixrab: "média",
 
   bernd: "Se você está cansado de promessas vazias, a 1xSlots chega com uma proposta mais completa para o público brasileiro, reunindo cassino, slots e apostas esportivas em uma única plataforma.",
@@ -319,7 +319,7 @@ withdrawalTerms: {
 {
   id: 4,
   title: "Brazino777",
-  year: 2018,
+  vozrast: 2019 ,
   affiUrl:'https://rt.pornhub.com/', 
   description: "Uma das plataformas mais populares no Brasil, conhecida por seu foco em jogos rápidos, slots e promoções frequentes para usuários ativos.",
   highlight: "Promoções constantes e grande volume de jogos disponíveis.",
@@ -334,7 +334,7 @@ withdrawalTerms: {
   cardStyle: "border-yellow-500/30 shadow-[0_0_20px_rgba(251,191,36,0.1)]",
 
   ganename: "roceta",
-  colgame: "7000",
+  colgame: "4 000",
   pixrab: "média",
 
   bernd: "Brazino777 é uma plataforma bastante conhecida no Brasil, voltada para entretenimento com apostas esportivas e jogos de cassino.",

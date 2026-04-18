@@ -8,7 +8,7 @@ export default function Obzornik() {
   const [expanded, setExpanded] = useState({});
 
   return (
-    <section className="bg-[#061409]  px-4 min-h-screen selection:bg-green-500/30 overflow-hidden relative">
+    <section className="bg-[#061409]   min-h-screen selection:bg-green-500/30 overflow-hidden relative">
       
       {/* Background Orbs para profundidade */}
       <div className="absolute top-[10%] left-[-10%] w-[500px] h-[500px] bg-green-600/10 blur-[120px] rounded-full pointer-events-none" />
