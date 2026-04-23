@@ -12,8 +12,8 @@ export default function Header() {
 
   return (
     <div>
-      <header className="w-full h-auto bg-[#0d1e0b] border-b-2 pt-[20px] pb-[20px] border-green-600 shadow-[0_4px_20px_rgba(0,168,89,0.2)] sticky top-0 z-50">
-            <div className="max-w-6xl mx-auto px-4 h-[150px] max-[500px]:h-[100px] flex items-center justify-between">
+      <header className="w-full h-auto bg-[#0d1e0b] border-b-2  border-green-600 shadow-[0_4px_20px_rgba(0,168,89,0.2)] sticky top-0 z-50">
+            <div className="max-w-6xl mx-auto px-20 max-[500px]:px-4  h-[150px] max-[500px]:h-[100px] flex items-center justify-between">
              
               <div className="flex-shrink-0 z-50">
                 <Image
@@ -29,7 +29,7 @@ export default function Header() {
            
           
            <div className="relative group py-4">
-             <button className="flex items-center gap-1 hover:text-green-500 transition-colors uppercase tracking-tighter font-black italic cursor-pointer text-green-500">
+             <button className="flex items-center gap-1 hover:text-amber-400 transition-colors uppercase tracking-tighter font-black italic cursor-pointer text-amber-50">
                Bônus
                <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-300" />
              </button>
@@ -57,9 +57,9 @@ export default function Header() {
          
           
          
-           <a href="/slots" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Slots</a>
-           <a href="/tips-and-strategies" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Dicas e estratégias</a>
-           <a href="/about-us" className="hover:text-green-500 transition-colors uppercase tracking-tighter italic">Sobre nós</a>
+           <a href="/slots" className="hover:text-amber-400 transition-colors uppercase tracking-tighter italic">Slots</a>
+           <a href="/tips-and-strategies" className="hover:text-amber-400 transition-colors uppercase tracking-tighter italic">Dicas e estratégias</a>
+           <a href="/about-us" className="hover:text-amber-400 transition-colors uppercase tracking-tighter italic">Sobre nós</a>
          
            <a 
              href="/cassinos-com-pix" 

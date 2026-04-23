@@ -12,7 +12,7 @@ export default function Sposok() {
   window.open(url, '_blank', 'noopener,noreferrer');
 };
   return (
-    <section className=" px-4 bg-[#061409] min-h-screen">
+    <section className=" px-4  bg-[#061409] min-h-screen">
       <div className="max-w-5xl mx-auto">
        
         <div className="text-center mb-12">

@@ -4,7 +4,7 @@ import Sposobreg from './Sposobreg'
 
 export default function Sravnevs() {
   return (
-    <section className="  py-10">
+    <section className="  ">
       <div className="max-w-6xl mx-auto">
 
         {/* HEADER */}
@@ -21,7 +21,7 @@ export default function Sravnevs() {
         <div className="w-full overflow-x-auto">
           <table className="min-w-[900px] w-full border-separate border-spacing-y-3">
 
-            {/* HEAD */}
+            
             <thead>
               <tr className="text-zinc-500 text-[10px] uppercase tracking-[3px]">
                 <th className="text-left px-4">Plataforma</th>
@@ -32,7 +32,7 @@ export default function Sravnevs() {
               </tr>
             </thead>
 
-            {/* BODY */}
+
             <tbody>
               {leaders.map((leader) => (
                 <tr
@@ -40,7 +40,6 @@ export default function Sravnevs() {
                   className="bg-[#080707] hover:bg-[#152733] transition rounded-2xl"
                 >
 
-                  {/* PLATFORM */}
                   <td className="px-4 max-[500px]:px-2  py-5 rounded-l-2xl border border-white/5">
                     <div className="flex items-center gap-3">
                       <img
@@ -96,7 +95,7 @@ export default function Sravnevs() {
         </div>
 
         {/* WINNER CARD */}
-        <div className="mt-10 bg-gray-900 border rounded-2xl p-6 md:p-10 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mt-10 min-[500px]:mt-7 bg-gray-900 border rounded-2xl p-6 max-[500px]:p-3 md:p-10 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-6">
 
           <div className="flex items-center gap-4">
             <div className="bg-green-500 p-4 rounded-xl">

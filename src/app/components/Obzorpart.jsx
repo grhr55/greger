@@ -17,7 +17,7 @@ export default function Obzornik() {
       <div className="max-w-6xl mx-auto relative z-10">
         
         {/* --- HEADER --- */}
-        <div className="my-20 text-center">
+        <div className="my-20 max-[500px]:my-10 text-center">
           <div className="inline-block bg-green-500/10 text-green-500 text-[10px] font-black uppercase tracking-[5px] px-4 py-2 rounded-full mb-6 border border-green-500/20">
             Análise Especializada 2026
           </div>
