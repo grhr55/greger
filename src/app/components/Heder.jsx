@@ -40,7 +40,7 @@ export default function Header() {
                    {leaders.slice(0, 3).map((leader) => (
                      <a key={leader.id} href={`/bonus/${leader.title}`} className="flex items-center justify-between p-3 bg-white/5 hover:bg-green-500/10 border border-white/5 hover:border-green-500/30 rounded-xl transition-all group/partner">
                        <div className="flex items-center gap-3">
-                         <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center p-1.5 border border-white/10 group-hover/partner:border-green-500/50">
+                         <div className="w-10 h-11 bg-black rounded-lg flex items-center justify-center p-1.5 border border-white/10 group-hover/partner:border-green-500/50">
                            <img src={leader.logo} alt={leader.title} className="w-full h-full object-contain" />
                          </div>
                          <div className="flex flex-col text-left">
