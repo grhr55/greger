@@ -150,8 +150,8 @@ export default function Header() {
       
     
     
-                    <a onClick={() => setIsOpen(false)} href="/jogos-demo" className="flex items-center justify-between bg-white/5 p-5 rounded-2xl border border-white/5 active:bg-white/10 transition-all group">
-                    <span className="text-white text-xl font-bold tracking-tight italic">Jogos Demo</span>
+                    <a onClick={() => setIsOpen(false)} href="/slots" className="flex items-center justify-between bg-white/5 p-5 rounded-2xl border border-white/5 active:bg-white/10 transition-all group">
+                    <span className="text-white text-xl font-bold tracking-tight italic">Slots</span>
                     <span className="text-green-500">→</span>
                    </a>
     
