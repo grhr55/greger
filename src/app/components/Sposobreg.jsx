@@ -1,6 +1,7 @@
 import { leaders } from './datapartnes'
 import Image from "next/image";
 import { Trophy } from "lucide-react";
+import Verifik from './Verifik'
 
 export default function Sposobreg() {
   return (
@@ -13,7 +14,7 @@ export default function Sposobreg() {
             Segunda rodada
           </h2>
           <p className="text-green-500 font-bold uppercase tracking-[2px] text-xs md:text-sm">
-            Quem tem as melhores condições de inscrição?
+            Quem tem as melhores condições de inscrição e como se inscrever?
           </p>
         </div>
 
@@ -162,6 +163,8 @@ export default function Sposobreg() {
           </div>
 
         </div>
+
+        <Verifik/>
 
       </div>
     </section>

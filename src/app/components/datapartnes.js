@@ -133,8 +133,11 @@ pravilareg: {
         val: "Use dados reais na rede social para evitar problemas na verificação (KYC)."
       }
     ]
-  }
-}
+  },
+  
+
+},
+
 
   },
   {
@@ -288,7 +291,9 @@ pravilareg: {
       }
     ]
   }
-}
+},
+ 
+  
   },
   {
   id: 3,
@@ -459,7 +464,10 @@ pravilareg: {
       }
     ]
   }
-}
+},
+
+  
+
 
 
 },
@@ -630,7 +638,9 @@ pravilareg: {
       }
     ]
   }
-}
+},
+
+  
 }
 
   
