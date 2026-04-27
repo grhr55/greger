@@ -137,8 +137,76 @@ pravilareg: {
   
 
 },
+verif: {
+  brand: "1win",
+  region: "Brazil (BRL)",
+  license: "Curacao Gaming License / Anjouan Regulatory Authority",
+  compliance: "International Digital AML Standard & Brazil PIX Gateway Protocol",
 
+  // Особенности 1win: акцент на автоматизацию и биометрию
+  requirements: {
+    identity: {
+      primary_key: "CPF (Cadastro de Pessoas Físicas)",
+      validation_method: "Instant PIX Gateway Verification", // Сверка при первом депозите
+      status: "Initial check during registration (Age 18+ check)",
+      age_verification: "Real-time validation against the government database"
+    },
 
+    biometrics: {
+      type: "AI-Powered Liveness Check",
+      mandatory: "Mandatory for high-limit accounts or suspicious activity",
+      capture_method: "Mobile-first face scan (automated)",
+      description: "Быстрое сканирование лица для подтверждения того, что аккаунтом владеет реальный человек, а не бот."
+    },
+
+    documents: {
+      accepted_types: [
+        "RG (Cédula de Identidade) - Original high-res photo",
+        "CNH (Carteira Nacional de Habilitação)",
+        "Bank Statement (Extrato bancário) for PIX confirmation",
+        "Digital ID via Gov.br (Screenshot of the validated profile)"
+      ],
+      strict_rules: {
+        format: "Original smartphone photos (JPEG/PNG)",
+        quality: "All document edges must be sharp; no flash glares on the plastic",
+        rejection_reason: "Photocopied documents, blurred text, or mismatch between PIX-key holder and ID"
+      }
+    },
+
+    financial_sync: {
+      method: "PIX (Primary), Crypto, Vouchers",
+      rule: "Account Integrity (CPF Match)",
+      pix_types: ["CPF Key", "Email", "Phone", "EVP"],
+      description: "1win требует, чтобы ввод и вывод средств осуществлялся через платежные инструменты, привязанные к CPF владельца аккаунта."
+    }
+  },
+
+  // Уровни верификации 1win
+  trust_levels: {
+    standard: "Daily limits applied. Standard withdrawal speed.",
+    verified: "Increased limits. Faster processing via PIX.",
+    partner_status: "Maximum limits. Dedicated security manager."
+  },
+
+  process: {
+    step_1: "One-click or Social Media registration with CPF binding",
+    step_2: "Email and Phone (+55) verification",
+    step_3: "Automated Liveness check (if requested by the system)",
+    step_4: "Manual document audit for large cash-outs (> 5,000 BRL)",
+    average_approval_time: {
+      automated: "1-3 minutes (AI validation)",
+      manual: "Up to 24 hours (Security queue)"
+    }
+  },
+
+  technical_notes: {
+    geo_fencing: "Regional Brazil lock (Access from foreign IPs may trigger security locks)",
+    vpn_policy: "Strictly prohibited for financial transactions",
+    aml_rules: "Automatic audit for fast 'deposit-withdrawal' cycles without betting activity"
+  },
+
+  penalties: "Account termination for using 'fake' or 'purchased' CPF data. Funds frozen in case of failed Liveness check during withdrawal."
+}
   },
   {
     id:2,
@@ -292,6 +360,76 @@ pravilareg: {
     ]
   }
 },
+verif: {
+  brand: "888starz",
+  region: "Brazil (BRL)",
+  license: "Curacao Antillephone N.V. / Licensing for 2026",
+  compliance: "International KYC/AML Standards & SPA Regulatory Alignment",
+
+  // Особенности 888starz: упор на подтверждение личности и борьбу с мультиаккаунтингом
+  requirements: {
+    identity: {
+      primary_key: "CPF (Cadastro de Pessoas Físicas)",
+      validation_method: "Cross-check with Payment Gateway Data",
+      status: "Required for the first withdrawal and to lift deposit restrictions",
+      age_verification: "Manual check of the ID document compared to profile data"
+    },
+
+    biometrics: {
+      type: "Liveness Check / Video Call",
+      mandatory: "On demand (usually for accounts with high turnover)",
+      capture_method: "Real-time camera capture via web-interface",
+      description: "Система может запросить видеоверификацию, если замечена активность с разных IP или использование разных платежных реквизитов."
+    },
+
+    documents: {
+      accepted_types: [
+        "RG (Cédula de Identidade) - Full scan or high-res photo",
+        "CNH (Carteira de Motorista)",
+        "Passaporte Brasileiro",
+        "Comprovante de residência (Water, electricity, or telephone bill - last 3 months)"
+      ],
+      strict_rules: {
+        format: "Original photos (JPEG, PNG, PDF)",
+        quality: "High resolution, all edges of the document must be visible, no glare",
+        rejection_reason: "Low quality, expired documents, name mismatch with bank account"
+      }
+    },
+
+    financial_sync: {
+      method: "PIX (Main), Bank Transfer, Pay4Fun",
+      rule: "Account Holder Match (Same CPF)",
+      pix_types: ["CPF Key", "Email", "Phone", "EVP (Random Key)"],
+      description: "Выплаты производятся только на верифицированные PIX-ключи, принадлежащие владельцу аккаунта. Использование корпоративных счетов (CNPJ) запрещено."
+    }
+  },
+
+  // Уровни верификации для 888starz
+  trust_levels: {
+    unverified: "Restricted withdrawals, standard deposit limits",
+    verified_identity: "Withdrawals allowed, increased limits",
+    fully_verified: "No limits on withdrawals, priority in queue"
+  },
+
+  process: {
+    step_1: "Registration and SMS/Email activation",
+    step_2: "Filling in all mandatory profile fields (CPF included)",
+    step_3: "Upload of ID and Proof of Address in the 'Verification' tab",
+    step_4: "Manual review by the security department",
+    average_approval_time: {
+      automated: "N/A (Primarily manual verification)",
+      manual: "12-48 hours (Typically faster on weekdays)"
+    }
+  },
+
+  technical_notes: {
+    geo_fencing: "Strict Brazilian IP match (Geo-location must match the registered country)",
+    vpn_policy: "Discouraged; usage during verification leads to automatic additional audit",
+    aml_rules: "Mandatory check for single transactions over 5,000 BRL"
+  },
+
+  penalties: "Suspension of account for 'Bonus Abusing' or multi-accounting. Funds may be frozen until full video-identity confirmation is completed."
+}
  
   
   },
@@ -465,10 +603,77 @@ pravilareg: {
     ]
   }
 },
+verif: {
+  brand: "1xSlots",
+  region: "Brazil (BRL)",
+  license: "Curacao eGaming / Anjouan Licensing Board",
+  compliance: "International AML/KYC Standard & Local PIX Gateway Integration",
 
-  
+  // Требования 1xSlots — акцент на многоуровневую проверку
+  requirements: {
+    identity: {
+      primary_key: "CPF (Cadastro de Pessoas Físicas)",
+      validation_method: "Internal Security Audit & PIX API Verification",
+      status: "Required to unlock the 'Withdrawal' section in the profile",
+      age_verification: "Manual or Semi-automated document review"
+    },
 
+    biometrics: {
+      type: "Selfie with Document (ID-Face Match)",
+      mandatory: "Selective (Triggered by high-volume or suspicious activity)",
+      capture_method: "Photo upload (High-resolution)",
+      description: "Фото пользователя, держащего паспорт/RG рядом с лицом. В редких случаях — видеозвонок в Telegram/Skype для подтверждения личности."
+    },
 
+    documents: {
+      accepted_types: [
+        "RG (Registro Geral) - Identity card",
+        "CNH (Driver’s License) - Digital or Physical",
+        "Brazilian Passport",
+        "Military ID (Carteira de Identidade Militar)",
+        "Proof of Wealth (в исключительных случаях при оборотах > 50,000 BRL)"
+      ],
+      strict_rules: {
+        format: "Original photos (HEIC/JPG/PNG)",
+        quality: "All corners must be visible, text must be readable without zoom",
+        rejection_reason: "Blurry images, presence of photo-editing traces, expired documents"
+      }
+    },
+
+    financial_sync: {
+      method: "PIX, AstroPay, Cryptocurrencies",
+      rule: "Closed Loop (Вывод тем же путем, что и депозит)",
+      pix_types: ["CPF Key (Mandatory for fast tracking)"],
+      description: "Строго запрещено использовать счета родственников. При использовании крипты верификация может быть запрошена повторно для привязки кошелька."
+    }
+  },
+
+  // Уровни аккаунта 1xSlots
+  trust_levels: {
+    new_user: "Email/Phone confirmed. Deposits enabled.",
+    verified_identity: "ID approved. Withdrawal enabled up to standard limits.",
+    vip_status: "Video-KYC passed. Priority withdrawals and high limits."
+  },
+
+  process: {
+    step_1: "Full profile completion (Address, Name, Surname, CPF)",
+    step_2: "Phone number binding (+55) with SMS code",
+    step_3: "Document upload in the 'Personal Profile' section",
+    step_4: "Manual security review (Checking for multi-accounting/bonus-abuse)",
+    average_approval_time: {
+      automated: "N/A (Primarily manual)",
+      manual: "24-72 hours (Depending on queue)"
+    }
+  },
+
+  technical_notes: {
+    geo_fencing: "Recommended Brazil IP (VPN usage is risky and can lead to additional KYC)",
+    vpn_policy: "Allowed only if local laws prevent access, but withdrawals may be frozen for check",
+    aml_rules: "Source of funds verification for deposits exceeding cumulative 20,000 BRL"
+  },
+
+  penalties: "Multi-accounting detection leads to permanent ban of all linked accounts. Attempts to use stolen CPF result in reporting to payment aggregators."
+}
 
 },
 {
@@ -640,6 +845,75 @@ pravilareg: {
   }
 },
 
+verif: {
+   brand: "Brazino777",
+  region: "Brazil (BRL)",
+  license: "SRIJ/SPA Federal License №001/2026",
+  compliance: "Federal Law 14.790/23 (New Gambling Framework)",
+
+  requirements: {
+    identity: {
+      primary_key: "CPF (Cadastro de Pessoas Físicas)",
+      validation_method: "Gov.br Silver/Gold Integration", // Интеграция с гос. порталом
+      status: "Mandatory for registration (Registration without CPF is disabled)",
+      age_verification: "Automated age-gate via Receita Federal API"
+    },
+
+    biometrics: {
+      type: "3D Liveness Detection (FaceTec/iProov)",
+      mandatory: true,
+      capture_method: "In-browser or In-app camera stream",
+      description: "Проверка на 'живость'. Требуется медленное вращение головой. Использование эмуляторов камеры ведет к автоматическому бану."
+    },
+
+    documents: {
+      accepted_types: [
+        "RG (Registro Geral) - New Unified Format preferred",
+        "CNH (Carteira Nacional de Habilitação) - Must be valid",
+        "RNE/CRNM (For legal foreign residents in Brazil)",
+        "Proof of Address - Electric/Water bills or Bank Statements (PDF original or High-Res photo)"
+      ],
+      strict_rules: {
+        format: "Original photos only (JPG/PNG)",
+        quality: "Minimum 300 DPI, no cropped edges",
+        rejection_reason: "Scans, black-and-white copies, or edited metadata (Exif)"
+      }
+    },
+
+    financial_sync: {
+      method: "PIX (Exclusively via Central Bank of Brazil)",
+      rule: "CPF-Matching (1:1)",
+      pix_types: ["CPF Key", "Email Key", "Random Key (Must be linked to user's CPF)"],
+      description: "Транзакции от третьих лиц блокируются. Имя отправителя в банковском слипе должно совпадать с именем в аккаунте до буквы."
+    }
+  },
+
+  // Уровни верификации для UI
+  trust_levels: {
+    unverified: "Limit: 0 BRL (Deposit/Withdrawal disabled)",
+    basic: "CPF Verified. Limit: 5,000 BRL monthly",
+    full: "Document + Biometrics approved. Unlimited BRL withdrawal",
+  },
+
+  process: {
+    step_1: "Real-time CPF & Age check (Instant)",
+    step_2: "Phone confirmation via WhatsApp or SMS (+55)",
+    step_3: "Liveness Check & Document Upload (Mandatory for first cash-out)",
+    step_4: "Address Verification (triggered for withdrawals > 10,000 BRL)",
+    average_approval_time: {
+      automated: "5-10 minutes",
+      manual: "Up to 24 hours (24/7 Support)"
+    }
+  },
+
+  technical_notes: {
+    geo_fencing: "Mandatory Brazilian IP (GPS coordinates required on mobile)",
+    vpn_policy: "Hard ban for VPN/Proxy/Tor usage",
+    aml_rules: "72-hour hold for suspicious transaction patterns"
+  },
+
+  penalties: "Zero-tolerance for 'Contas Laranja' (rented accounts). Detected fraud leads to reporting to Coaf (Financial Activities Control Council)."
+    }
   
 }
 

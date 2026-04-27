@@ -2,6 +2,7 @@ import { leaders } from "./datapartnes";
 import { Check, Zap, Trophy } from "lucide-react";
 import Sposobreg from './Sposobreg'
 
+
 export default function Sravnevs() {
   return (
     <section className="  ">
@@ -114,7 +115,7 @@ export default function Sravnevs() {
 
           <div className="text-center md:text-right">
             <p className="text-zinc-500 text-xs uppercase">Score</p>
-            <p className="text-3xl font-black text-green-500">1 / 15</p>
+            <p className="text-3xl font-black text-green-500">2 / 15</p>
           </div>
 
         </div>
