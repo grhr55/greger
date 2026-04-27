@@ -206,6 +206,69 @@ verif: {
   },
 
   penalties: "Account termination for using 'fake' or 'purchased' CPF data. Funds frozen in case of failed Liveness check during withdrawal."
+},
+mindep:{
+  brand: "1win",
+  currency: "BRL (R$)",
+  region: "Brazil",
+  
+  // Общие лимиты
+  limits: {
+    min_deposit: 25, // ~ $5, зависит от метода
+    max_deposit: 200000,
+    instant_credit: true
+  },
+
+  // Детализация по платежным методам
+  payment_methods: [
+    {
+      method: "PIX (via Payment Aggregator)",
+      min: 25,
+      max: 100000,
+      fee: 0,
+      time: "Instant",
+      recommended: true
+    },
+    {
+      method: "Bank Cards (Visa / Mastercard)",
+      min: 50,
+      max: 150000,
+      fee: 0,
+      time: "Instant",
+      recommended: false
+    },
+    {
+      method: "Crypto (USDT / BTC / ETH)",
+      min: 25,
+      max: 200000,
+      fee: 0,
+      time: "5–15 min",
+      recommended: true
+    },
+    {
+      method: "E-wallets (Jeton / Skrill / Neteller)",
+      min: 25,
+      max: 100000,
+      fee: 0,
+      time: "Instant",
+      recommended: false
+    }
+  ],
+
+  // Настройки для UI
+  ui_display: {
+    badge: "Min R$ 25",
+    fast_deposit_buttons: [50, 100, 250, 500],
+    bonus_trigger: 50, // Минимум для активации бонуса
+    description: "Depósitos rápidos com múltiplos métodos, incluindo PIX e криптовалюты, с мгновенным зачислением."
+  },
+
+  // Технические заметки (Compliance 2026)
+  notes: {
+    pix_availability: "PIX доступен через сторонние платёжные шлюзы, не всегда напрямую",
+    kyc_required: "Вывод средств требует верификации личности (KYC)",
+    dynamic_limits: "Лимиты могут динамически изменяться в зависимости от аккаунта и платёжного метода"
+  }
 }
   },
   {
@@ -429,8 +492,59 @@ verif: {
   },
 
   penalties: "Suspension of account for 'Bonus Abusing' or multi-accounting. Funds may be frozen until full video-identity confirmation is completed."
+},
+
+mindep:{
+  brand: "888Starz",
+  currency: "BRL (R$)",
+  region: "Brasil",
+  
+  limits: {
+    min_deposit: 5, // pode chegar a ~R$5 (~$1)
+    max_deposit: 150000,
+    instant_credit: true
+  },
+
+  payment_methods: [
+    {
+      method: "Criptomoedas (USDT / BTC / TRX)",
+      min: 5,
+      max: 150000,
+      fee: 0,
+      time: "Instantâneo",
+      recommended: true
+    },
+    {
+      method: "Carteiras digitais (Jeton / MuchBetter)",
+      min: 10,
+      max: 100000,
+      fee: 0,
+      time: "Instantâneo",
+      recommended: true
+    },
+    {
+      method: "Cartões (Visa / Mastercard)",
+      min: 10,
+      max: 100000,
+      fee: 0,
+      time: "Instantâneo",
+      recommended: false
+    }
+  ],
+
+  ui_display: {
+    badge: "Min R$ 5",
+    fast_deposit_buttons: [20, 50, 100, 300],
+    bonus_trigger: 50,
+    description: "Depósitos rápidos com forte suporte a criptomoedas e carteiras digitais."
+  },
+
+  notes: {
+    crypto_priority: "Plataforma favorece pagamentos em criptomoedas",
+    kyc_required: "Verificação pode ser solicitada no saque",
+    flexible_limits: "Limites variam bastante conforme método"
+  }
 }
- 
   
   },
   {
@@ -673,6 +787,65 @@ verif: {
   },
 
   penalties: "Multi-accounting detection leads to permanent ban of all linked accounts. Attempts to use stolen CPF result in reporting to payment aggregators."
+},
+mindep:{
+  brand: "1xSlots",
+  currency: "BRL (R$)",
+  region: "Brasil",
+  
+  limits: {
+    min_deposit: 5, // ~R$5 (~$1)
+    max_deposit: 200000,
+    instant_credit: true
+  },
+
+  payment_methods: [
+    {
+      method: "Criptomoedas (BTC / ETH / USDT)",
+      min: 5,
+      max: 200000,
+      fee: 0,
+      time: "Instantâneo",
+      recommended: true
+    },
+    {
+      method: "Carteiras digitais (Skrill / Neteller / Jeton)",
+      min: 5,
+      max: 100000,
+      fee: 0,
+      time: "Instantâneo",
+      recommended: true
+    },
+    {
+      method: "Cartões (Visa / Mastercard)",
+      min: 10,
+      max: 150000,
+      fee: 0,
+      time: "Instantâneo",
+      recommended: false
+    },
+    {
+      method: "Transferência bancária",
+      min: 50,
+      max: 200000,
+      fee: 0,
+      time: "1–3 dias",
+      recommended: false
+    }
+  ],
+
+  ui_display: {
+    badge: "Min R$ 5",
+    fast_deposit_buttons: [20, 50, 100, 500],
+    bonus_trigger: 50,
+    description: "Cassino focado em slots com depósitos rápidos e suporte amplo a крипто."
+  },
+
+  notes: {
+    slots_focus: "Plataforma especializada em jogos de cassino (slots)",
+    kyc_required: "KYC necessário para saques maiores",
+    crypto_friendly: "Alta compatibilidade com carteiras cripto"
+  }
 }
 
 },
@@ -913,7 +1086,66 @@ verif: {
   },
 
   penalties: "Zero-tolerance for 'Contas Laranja' (rented accounts). Detected fraud leads to reporting to Coaf (Financial Activities Control Council)."
+    },
+    mindep:{
+  brand: "Brazino777",
+  currency: "BRL (R$)",
+  region: "Brasil",
+  
+  limits: {
+    min_deposit: 20, // valor real mais comum via PIX
+    max_deposit: 100000,
+    instant_credit: true
+  },
+
+  payment_methods: [
+    {
+      method: "PIX (Nativo)",
+      min: 20,
+      max: 50000,
+      fee: 0,
+      time: "Instantâneo",
+      recommended: true
+    },
+    {
+      method: "PIX Copia e Cola",
+      min: 20,
+      max: 50000,
+      fee: 0,
+      time: "Instantâneo",
+      recommended: true
+    },
+    {
+      method: "Boleto",
+      min: 30,
+      max: 10000,
+      fee: 0,
+      time: "Até 1h",
+      recommended: false
+    },
+    {
+      method: "AstroPay / Pay4Fun",
+      min: 20,
+      max: 20000,
+      fee: 0,
+      time: "Instantâneo",
+      recommended: false
     }
+  ],
+
+  ui_display: {
+    badge: "Min R$ 20",
+    fast_deposit_buttons: [20, 50, 100, 300],
+    bonus_trigger: 20,
+    description: "Depósitos simplificados via PIX com integração local no Brasil."
+  },
+
+  notes: {
+    pix_native: "Forte integração com PIX (principal método no Brasil)",
+    cpf_required: "Conta exige validação de CPF",
+    local_focus: "Plataforma altamente adaptada ao mercado brasileiro"
+  }
+}
   
 }
 

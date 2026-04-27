@@ -1,5 +1,6 @@
 import { leaders } from './datapartnes';
 import { Trophy, CheckCircle2, ShieldCheck, Zap, Info } from "lucide-react";
+import Mindep from './Mindep'
 
 export default function Verifik() {
   const winner = leaders.find(l => l.title === "Brazino777") || leaders[0];
@@ -250,10 +251,11 @@ export default function Verifik() {
 
           <div className="text-center md:text-right">
             <p className="text-zinc-500 text-xs uppercase">Score</p>
-            <p className="text-3xl font-black text-green-500">3 / 15</p>
+            <p className="text-3xl font-black text-green-500">1 / 15</p>
           </div>
 
         </div>
+        <Mindep/>
     </div>
   );
 }
