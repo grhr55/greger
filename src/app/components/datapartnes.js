@@ -143,11 +143,11 @@ verif: {
   license: "Curacao Gaming License / Anjouan Regulatory Authority",
   compliance: "International Digital AML Standard & Brazil PIX Gateway Protocol",
 
-  // Особенности 1win: акцент на автоматизацию и биометрию
+  
   requirements: {
     identity: {
       primary_key: "CPF (Cadastro de Pessoas Físicas)",
-      validation_method: "Instant PIX Gateway Verification", // Сверка при первом депозите
+      validation_method: "Instant PIX Gateway Verification", 
       status: "Initial check during registration (Age 18+ check)",
       age_verification: "Real-time validation against the government database"
     },
@@ -214,7 +214,7 @@ mindep:{
   
   // Общие лимиты
   limits: {
-    min_deposit: 25, // ~ $5, зависит от метода
+    min_deposit: 20, // ~ $5, зависит от метода
     max_deposit: 200000,
     instant_credit: true
   },
@@ -223,7 +223,7 @@ mindep:{
   payment_methods: [
     {
       method: "PIX (via Payment Aggregator)",
-      min: 25,
+      min: 30,
       max: 100000,
       fee: 0,
       time: "Instant",
@@ -231,7 +231,7 @@ mindep:{
     },
     {
       method: "Bank Cards (Visa / Mastercard)",
-      min: 50,
+      min: 20,
       max: 150000,
       fee: 0,
       time: "Instant",
@@ -239,7 +239,7 @@ mindep:{
     },
     {
       method: "Crypto (USDT / BTC / ETH)",
-      min: 25,
+      min: 15,
       max: 200000,
       fee: 0,
       time: "5–15 min",
@@ -723,7 +723,7 @@ verif: {
   license: "Curacao eGaming / Anjouan Licensing Board",
   compliance: "International AML/KYC Standard & Local PIX Gateway Integration",
 
-  // Требования 1xSlots — акцент на многоуровневую проверку
+  
   requirements: {
     identity: {
       primary_key: "CPF (Cadastro de Pessoas Físicas)",
@@ -794,7 +794,7 @@ mindep:{
   region: "Brasil",
   
   limits: {
-    min_deposit: 5, // ~R$5 (~$1)
+    min_deposit: 1, 
     max_deposit: 200000,
     instant_credit: true
   },
