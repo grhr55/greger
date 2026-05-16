@@ -1,7 +1,7 @@
 "use client";
 import { leaders } from './datapartnes';
 import { Wallet, ArrowRight, Star, Trophy, ShieldCheck } from "lucide-react";
-import PaymentSystems from "./Plitsistem"
+import Plitsistem from "./Plitsistem"
 
 
 export default function Mindep() {
@@ -200,7 +200,7 @@ export default function Mindep() {
 
         </div>
       </div>
-      <PaymentSystems/>
+      <Plitsistem/>
     
     </div>
   );
