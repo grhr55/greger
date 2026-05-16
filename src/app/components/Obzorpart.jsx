@@ -109,10 +109,10 @@ export default function Obzornik() {
           <a
             key={leader.id}
             href={`/${leader.title}`}
-            className="relative bg-white/[0.03] border border-white/5 p-3 rounded-2xl flex items-center justify-between gap-3 backdrop-blur-md overflow-hidden active:bg-white/[0.06] transition-colors"
+            className="relative bg-black border p-3 rounded-2xl flex items-center justify-between gap-3 overflow-hidden transition-colors"
           >
             {/* Эффект свечения */}
-            <div className="absolute inset-0 bg-gradient-to-b from-green-500/10 to-transparent pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-b to-transparent pointer-events-none" />
             
             {/* Левая часть: Логотип и Название */}
             <div className="relative z-10 flex items-center gap-3 min-w-0 flex-1">
