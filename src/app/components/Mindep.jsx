@@ -7,7 +7,7 @@ export default function Mindep() {
     <div className="min-h-screen w-full py-12   text-zinc-100 ">
       
       {/* HEADER SECTION */}
-      <div className="text-center mb-20 px-4">
+      <div className="text-center mb-20 ">
        
         <h1 className="text-white text-5xl md:text-7xl font-black uppercase italic tracking-tighter leading-none">
           Quarta Rodada <br />
@@ -21,7 +21,7 @@ export default function Mindep() {
       </div>
 
       {/* GRID DE CARDS */}
-      <div className="px-6 max-w-[1440px] mx-auto">
+      <div className=" max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {leaders.map((item, index) => (
             <div

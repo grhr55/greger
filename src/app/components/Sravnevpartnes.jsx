@@ -96,29 +96,33 @@ export default function Sravnevs() {
         </div>
 
         {/* WINNER CARD */}
-        <div className="mt-10 min-[500px]:mt-7 bg-gray-900 border rounded-2xl p-6 max-[500px]:p-3 md:p-10 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-6">
+     <div className="mt-4 sm:mt-7 bg-gray-900 border border-white/10 rounded-xl sm:rounded-2xl p-3 sm:p-6 md:p-10 relative flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 md:gap-6">
 
-          <div className="flex items-center gap-4">
-            <div className="bg-green-500 p-4 rounded-xl">
-              <Trophy className="text-black" />
-            </div>
+  {/* Контентная часть */}
+  <div className="flex items-center gap-3 sm:gap-4 flex-1 min-w-0 pr-12 md:pr-0">
+    {/* Компактный кубок для мобилки */}
+    <div className="bg-green-500 p-2.5 sm:p-4 rounded-lg sm:rounded-xl flex-shrink-0">
+      <Trophy size={20} className="text-black sm:w-6 sm:h-6" />
+    </div>
 
-            <div>
-              <h2 className="text-xl md:text-3xl font-black text-white uppercase">
-                Vencedor: <span className="text-green-500">{leaders[0].title}</span>
-              </h2>
-              <p className="text-amber-50 text-xs md:text-sm mt-1">
-               1 rodada {leaders[0].title} pela resposta rápida e pelo extenso banco de dados de jogos da PIX.
-              </p>
-            </div>
-          </div>
+    {/* Тексты */}
+    <div className="min-w-0">
+      <h2 className="text-sm sm:text-xl md:text-3xl font-black text-white uppercase tracking-tight truncate">
+        Vencedor: <span className="text-green-500">{leaders[0].title}</span>
+      </h2>
+      <p className="text-amber-50 text-[11px] sm:text-xs md:text-sm mt-0.5 sm:mt-1 leading-tight sm:leading-normal font-medium opacity-90">
+        1ª rodada {leaders[0].title} pela resposta rápida e pelo extenso banco de dados de jogos da PIX.
+      </p>
+    </div>
+  </div>
 
-          <div className="text-center md:text-right">
-            <p className="text-zinc-500 text-xs uppercase">Score</p>
-            <p className="text-3xl font-black text-green-500">1 / 15</p>
-          </div>
+  {/* Блок Score: на мобилках уходит в абсолют в угол, на ПК встает в общую линию */}
+  <div className="absolute top-3 right-3 text-right md:relative md:top-auto md:right-auto md:text-right flex flex-col justify-center flex-shrink-0">
+    <p className="text-zinc-500 text-[9px] md:text-xs uppercase font-bold tracking-wider leading-none md:leading-normal">Score</p>
+    <p className="text-lg md:text-3xl font-black text-green-500 leading-none md:leading-normal mt-0.5">1 / 15</p>
+  </div>
 
-        </div>
+</div>
 
       </div>
 
