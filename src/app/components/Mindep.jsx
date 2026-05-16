@@ -6,7 +6,7 @@ import PaymentSystems from "./Plitsistem"
 
 export default function Mindep() {
   return (
-    <div className="min-h-screen w-full py-6 md:py-12 text-zinc-100  md:px-0">
+    <div className="min-h-screen w-full py-5 md:py-12 text-zinc-100  md:px-0">
       
       {/* HEADER SECTION */}
       <div className="text-center mb-10 md:mb-20">
