@@ -22,7 +22,7 @@ export default function Obzornik() {
             Análise Especializada 2026
           </div>
           <h2 className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter mb-6 italic leading-none">
-            Conheça os <span className="text-green-500 drop-shadow-[0_0_15px_rgba(34,197,94,0.4)]">3 Gigantes</span>
+            Conheça os <span className="text-green-500 drop-shadow-[0_0_15px_rgba(34,197,94,0.4)]">4 Gigantes</span>
           </h2>
           <p className="text-zinc-400 max-w-3xl mx-auto text-sm md:text-lg leading-relaxed font-medium">
             Analisamos segurança, velocidade de saque e bônus reais. Estas plataformas dominam o mercado brasileiro com tecnologia de ponta e <span className="text-white border-b border-green-500/50">processamento PIX instantâneo.</span>
@@ -35,8 +35,9 @@ export default function Obzornik() {
           </div>
         </div>
 
-        {/* --- CARDS GRID --- */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+       <div className="hidden min-[550px]:flex">
+       
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8  ">
           {leaders.map((leader) => (
             <a
               key={leader.id}
@@ -96,7 +97,71 @@ export default function Obzornik() {
             </a>
           ))}
         </div>
+       </div>
 
+
+        
+      <div className="flex min-[550px]:hidden">
+        <div className="max-w-md mx-auto space-y-4 ">
+        
+        {/* Карточка */}
+        {leaders.map((leader) => (
+          <a
+            key={leader.id}
+            href={`/${leader.title}`}
+            className="relative bg-white/[0.03] border border-white/5 p-3 rounded-2xl flex items-center justify-between gap-3 backdrop-blur-md overflow-hidden active:bg-white/[0.06] transition-colors"
+          >
+            {/* Эффект свечения */}
+            <div className="absolute inset-0 bg-gradient-to-b from-green-500/10 to-transparent pointer-events-none" />
+            
+            {/* Левая часть: Логотип и Название */}
+            <div className="relative z-10 flex items-center gap-3 min-w-0 flex-1">
+              {/* Компактный контейнер логотипа */}
+              <div className="w-20 h-14 flex-shrink-0 flex justify-center items-center bg-black/40 rounded-xl border border-white/5 p-2">
+                <Image
+                  src={leader.logo}
+                  alt={`Logo ${leader.title}`}
+                  width={80}
+                  height={30}
+                  priority
+                  className="object-contain max-h-full"
+                />
+              </div>
+              
+              {/* Название бренда */}
+              <div className="min-w-0">
+                <div className="flex items-center gap-1.5 mb-0.5">
+                  <div className="w-1.5 h-1.5 rounded-full bg-green-500"></div>
+                  <h3 className="text-sm font-black text-white uppercase italic tracking-tight truncate">
+                    {leader.title}
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            {/* Правая часть: Бонус и Знак инфо */}
+            <div className="relative z-10 flex-shrink-0 flex flex-col items-end justify-center">
+              {/* Компактная плашка бонуса */}
+              <div className="bg-black/60 py-1.5 px-2.5 rounded-lg border border-white/10 max-w-[130px]">
+                <p className="text-green-400 font-black text-xs uppercase italic tracking-tight leading-none truncate">
+                  {leader.bonus}
+                </p>
+              </div>
+              
+              {/* Индикатор, что можно узнать инфу */}
+              <div className="mt-1.5 flex items-center gap-1">
+                <span className="text-[9px] text-green-400 font-bold uppercase tracking-wider bg-green-500/10 border border-green-500/20 px-1.5 py-0.5 rounded flex items-center gap-1">
+                  Saber Mais <span className="text-[10px]">ⓘ</span>
+                </span>
+              </div>
+            </div>
+
+          </a>
+        ))}
+
+      </div>
+      </div>
+    
        
         <div className="pt-10">
           <Sravnevs />
