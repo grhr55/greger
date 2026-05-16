@@ -1,261 +1,197 @@
 import { leaders } from './datapartnes';
 import { Trophy, CheckCircle2, ShieldCheck, Zap, Info } from "lucide-react";
-import Mindep from './Mindep'
+import Mindep from './Mindep';
 
 export default function Verifik() {
-  const winner = leaders.find(l => l.title === "Brazino777") || leaders[0];
+  const winner =
+    leaders.find((l) => l.title === "Winner") || leaders[0];
 
   return (
-    // Добавляем небольшой блюр на весь контейнер, чтобы контент не сливался с активным фоном
-    <div className="w-full flex flex-col gap-6 py-10 max-w-7xl mx-auto">
+    <div className="relative w-full flex flex-col gap-10 py-14 max-w-7xl mx-auto text-white overflow-hidden">
+
+      {/* BACKGROUND GLOW */}
+      <div className="absolute top-[-200px] right-[-200px] w-[500px] h-[500px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-[-200px] left-[-200px] w-[500px] h-[500px] bg-blue-500/10 blur-[160px] rounded-full pointer-events-none" />
+
+      {/* HEADER */}
+      <div className="text-center space-y-4 px-4">
       
-      <div className="flex items-center gap-4 mb-4">
-        <div className="p-2 bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
-          <ShieldCheck className="text-white w-6 h-6" />
-        </div>
-        <h3 className="text-white text-3xl font-black uppercase tracking-tighter py-10 max-[500px]:py-2">
-         Terceira rodada Condições de  <span className="text-emerald-400">verificação</span>
-        </h3>
+
+        <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter">
+          TOP VERIFIED <span className="text-emerald-400">PLATFORMS</span>
+        </h2>
+
+        <p className="text-zinc-400 text-sm max-w-2xl mx-auto">
+          Analysis of approval speed, KYC complexity and payment reliability across leading platforms
+        </p>
       </div>
 
-      {leaders.map((leader) => (
-        <div 
-          key={leader.id} 
-          // Стекло: полупрозрачный фон + сильный блюр
-          className="relative bg-black/60 backdrop-blur-xl border border-white/10 rounded-[32px] p-8 max-[500px]:p-5 hover:border-white/30 transition-all duration-500 group overflow-hidden"
-        >
-          {/* Декоративное свечение внутри карточки */}
-          <div className="absolute -top-24 -right-24 w-48 h-48 bg-emerald-500/10 blur-[80px] rounded-full group-hover:bg-emerald-500/20 transition-colors" />
+      {/* WINNER HERO */}
+      <div className="
+        relative overflow-hidden rounded-[40px] p-8 md:p-12
+        bg-gradient-to-br from-emerald-500/20 via-black to-black
+        border border-emerald-500/30
+        shadow-[0_0_80px_rgba(16,185,129,0.25)]
+      ">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.25),transparent_60%)]" />
 
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 relative z-10">
-            
-            {/* БРЕНД */}
-            <div className="flex flex-col gap-6">
-              <div className="flex items-center gap-5">
-                <div className="relative p-3 bg-white/5 rounded-2xl border border-white/10 shadow-2xl">
-                  <img src={leader.logo} className="w-12 h-12 object-contain" alt={leader.title} />
+        <div className="relative flex flex-col md:flex-row justify-between gap-8">
+          
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <Trophy className="text-emerald-400 w-6 h-6" />
+              <span className="text-xs uppercase tracking-[0.3em] text-emerald-300">
+                #1 Winner
+              </span>
+            </div>
+
+            <h3 className="text-4xl md:text-6xl font-black uppercase">
+              {winner.title}
+            </h3>
+
+            <p className="text-zinc-300 text-sm max-w-md">
+              Fastest approval system with automated KYC verification and instant PIX payments.
+            </p>
+
+            <div className="flex gap-2 flex-wrap">
+              <span className="px-3 py-1 text-xs bg-emerald-500/20 border border-emerald-500/30 rounded-full">
+                Instant Approval
+              </span>
+              <span className="px-3 py-1 text-xs bg-white/5 border border-white/10 rounded-full">
+                Gov Verified
+              </span>
+              <span className="px-3 py-1 text-xs bg-white/5 border border-white/10 rounded-full">
+                PIX Enabled
+              </span>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-between text-right">
+            <div>
+              <p className="text-zinc-400 text-xs uppercase">Approval Time</p>
+              <p className="text-3xl font-black text-emerald-400">
+                {winner.verif.process.average_approval_time.automated ||
+                  winner.verif.process.average_approval_time}
+              </p>
+            </div>
+
+            <div className="mt-6">
+              <p className="text-zinc-400 text-xs uppercase">Score</p>
+              <p className="text-4xl font-black">1 / 15</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* RANKING CARDS */}
+      <div className="grid gap-5 px-2">
+
+        {leaders.map((leader, i) => (
+          <div
+            key={leader.id}
+            className="
+              group relative overflow-hidden
+              rounded-3xl p-6 md:p-8
+              bg-white/[0.03]
+              border border-white/10
+              hover:bg-white/[0.06]
+              hover:border-white/20
+              transition-all duration-500
+              hover:-translate-y-1
+            "
+          >
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-[radial-gradient(circle_at_top_left,rgba(16,185,129,0.08),transparent_60%)]" />
+
+            <div className="relative flex flex-col md:flex-row md:items-center justify-between gap-6">
+
+              {/* LEFT */}
+              <div className="flex items-center gap-4">
+                <div className="p-3 rounded-2xl bg-white/5 border border-white/10">
+                  <img src={leader.logo} className="w-10 h-10 object-contain" />
                 </div>
+
                 <div>
-                  <h2 className="text-white font-black text-2xl uppercase tracking-tight">{leader.title}</h2>
+                  <h3 className="text-xl font-black uppercase">
+                    {leader.title}
+                  </h3>
+
                   <div className="flex items-center gap-2 mt-1">
-                    <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-                    <span className="text-emerald-400 text-[10px] font-black uppercase tracking-widest leading-none">
+                    <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
+                    <span className="text-xs text-zinc-400 uppercase tracking-widest">
                       {leader.verif.region}
                     </span>
                   </div>
                 </div>
               </div>
-              
-              <div className="bg-black/40 backdrop-blur-sm p-4 rounded-2xl border border-white/5">
-                <p className="text-zinc-500 text-[9px] uppercase font-black mb-1 tracking-widest flex items-center gap-2">
-                  <Info className="w-3 h-3" /> Conformidade Legal
-                </p>
-                <p className="text-zinc-200 text-[11px] leading-tight font-medium opacity-90">
-                  {leader.verif.compliance}
-                </p>
-              </div>
-            </div>
 
-            {/* KYC & ДОКУМЕНТЫ */}
-            <div className="lg:col-span-2 flex flex-col gap-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                <div className="space-y-5">
-                  <div className="group/item">
-                    <p className="text-white text-[14px] font-black flex items-center gap-3">
-                      <div className="p-1 bg-emerald-500 rounded-md">
-                        <CheckCircle2 className="w-3 h-3 text-black" /> 
-                      </div>
-                      {leader.verif.requirements.identity.primary_key}
-                    </p>
-                    <p className="text-zinc-400 text-[11px] mt-2 pl-8 leading-relaxed">
-                      {leader.verif.requirements.identity.validation_method}
-                    </p>
-                  </div>
-                  
-                  <div>
-                    <p className="text-white text-[14px] font-black flex items-center gap-3">
-                      <div className="p-1 bg-white/10 rounded-md">
-                        <Zap className="w-3 h-3 text-emerald-400 fill-emerald-400" /> 
-                      </div>
-                      Biometria
-                    </p>
-                    <p className="text-zinc-400 text-[11px] mt-2 pl-8 leading-tight italic opacity-80">
-                      {leader.verif.requirements.biometrics.type}
-                    </p>
-                  </div>
+              {/* CENTER */}
+              <div className="grid grid-cols-3 gap-6 text-sm text-center">
+                <div>
+                  <p className="text-zinc-500 text-xs">Difficulty</p>
+                  <p className="font-bold text-white">{leader.verif.difficulty || "—"}</p>
                 </div>
 
-                <div className="bg-white/[0.03] border border-white/10 p-5 rounded-3xl relative">
-                  <p className="text-white text-[10px] font-black uppercase mb-4 tracking-wider flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full" />
-                    Documentos Aceitos
+                <div>
+                  <p className="text-zinc-500 text-xs">Speed</p>
+                  <p className="font-bold text-white">
+                    {leader.verif.process.average_approval_time.automated }
                   </p>
-                  <ul className="space-y-3">
-                    {leader.verif.requirements.documents.accepted_types.slice(0, 4).map((doc, i) => (
-                      <li key={i} className="text-zinc-300 text-[11px] font-medium flex items-center gap-3">
-                        <div className="w-1 h-[1px] bg-zinc-700" />
-                        {doc.split('-')[0].trim()}
-                      </li>
-                    ))}
-                  </ul>
                 </div>
-              </div>
-            </div>
 
-            {/* СТАТУС И ВРЕМЯ */}
-            <div className="flex flex-col justify-between lg:border-l border-white/10 lg:pl-10">
-              <div className="space-y-6">
                 <div>
-                  <span className="text-zinc-500 text-[10px] font-black uppercase block mb-2 tracking-widest opacity-70">Pagamentos</span>
-                  <div className="inline-flex items-center gap-2 bg-emerald-500 text-black px-3 py-1 rounded-full shadow-[0_0_15px_rgba(16,185,129,0.2)]">
-                    <span className="font-black text-[10px] uppercase">Pix Oficial</span>
-                  </div>
-                </div>
-                <div>
-                  <span className="text-zinc-500 text-[10px] font-black uppercase block mb-1 tracking-widest opacity-70">Aprovação</span>
-                  <span className="text-white text-lg font-black tracking-tighter">
-                    {leader.verif.process.average_approval_time.automated || leader.verif.process.average_approval_time}
-                  </span>
+                  <p className="text-zinc-500 text-xs">KYC</p>
+                  <p className="font-bold text-white">
+                    {leader.verif.requirements.identity.primary_key}
+                  </p>
                 </div>
               </div>
-              
-              <div className="mt-8 flex items-end justify-between">
-                <span className="text-5xl text-white font-black italic tracking-tighter opacity-20">18+</span>
+
+              {/* RIGHT */}
+              <div className="flex items-center justify-between md:justify-end gap-6">
+
                 <div className="text-right">
-                  <div className="bg-white text-black px-3 py-1 text-[10px] font-black uppercase mb-1 rounded-full inline-block">
-                    Full Compliance
-                  </div>
-                  <p className="text-zinc-500 text-[9px] font-black uppercase tracking-[0.2em]">Verified 2026</p>
+                  <p className="text-xs text-zinc-500 uppercase">Rating</p>
+                  <p className="text-sm font-black text-emerald-400">
+                    {i === 0 ? "★★★★★" : i === 1 ? "★★★★☆" : "★★★☆☆"}
+                  </p>
                 </div>
+
+                {i === 0 && (
+                  <div className="px-3 py-1 rounded-full bg-emerald-500 text-black text-[10px] font-black uppercase">
+                    Top
+                  </div>
+                )}
               </div>
             </div>
-
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
 
-      {/* БЛОК ПОБЕДИТЕЛЯ */}
- 
-      <div className="mt-16 w-full px-2 max-w-[1200px] mx-auto">
-  <h3 className="text-center pb-10 text-3xl max-[500px]:text-2xl md:text-5xl font-black uppercase italic tracking-tighter text-white drop-shadow-lg">
-    Resultado da <span className="text-emerald-500">tabela</span>
-  </h3>
-  
-  <div className="overflow-hidden rounded-[32px] border border-white/10 bg-black/60 backdrop-blur-xl shadow-2xl">
-    <div className="overflow-x-auto">
-      <table className="w-full text-left border-collapse min-w-[600px]">
-        <thead>
-          <tr className="bg-white/5 border-b border-white/10">
-            <th className="p-5 text-zinc-500 text-[10px] md:text-xs uppercase font-black tracking-[0.2em]">Plataforma</th>
-            <th className="p-5 text-zinc-500 text-[10px] md:text-xs uppercase font-black tracking-[0.2em]">Dificuldade</th>
-            <th className="p-5 text-zinc-500 text-[10px] md:text-xs uppercase font-black tracking-[0.2em]">Velocidade</th>
-            <th className="p-5 text-zinc-500 text-[10px] md:text-xs uppercase font-black tracking-[0.2em]">Tipo de KYC</th>
-            <th className="p-5 text-zinc-500 text-[10px] md:text-xs uppercase font-black tracking-[0.2em]">Avaliação</th>
-          </tr>
-        </thead>
+        <div className="mt-12 bg-gradient-to-r bg-gray-900 rounded-3xl p-6 max-[500px]:p-4 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+   
+             <div className="flex items-center gap-4 text-center md:text-left">
+               <div className="bg-green-500 p-4 rounded-xl">
+                 <Trophy className="text-black" />
+               </div>
+   
+               <div>
+                 <h2 className="text-xl md:text-3xl font-black uppercase">
+                   Vencedor: <span className="text-green-500">{leaders[0].title}</span>
+                 </h2>
+                 <p className="text-zinc-400 text-xs md:text-sm mt-1">
+                  Verificação fácil e rápida
+                 </p>
+               </div>
+             </div>
+   
+             <div className="text-center md:text-right">
+               <p className="text-zinc-500 text-xs uppercase">Score</p>
+               <p className="text-3xl font-black text-green-500">1 / 15</p>
+             </div>
+   
+           </div>
 
-        <tbody className="divide-y divide-white/[0.05]">
-          {[
-            {
-              name: "Brazino777",
-              diff: "Muito Fácil",
-              speed: "Instantâneo",
-              kyc: "Gov.br Sync",
-              stars: "⭐⭐⭐⭐⭐",
-              color: "text-emerald-400",
-              isWinner: true
-            },
-            {
-              name: "1WIN",
-              diff: "Fácil",
-              speed: "5-15 min",
-              kyc: "AI Biometrics",
-              stars: "⭐⭐⭐⭐",
-              color: "text-emerald-400",
-              isWinner: false
-            },
-            {
-              name: "888starz",
-              diff: "Normal",
-              speed: "Até 24h",
-              kyc: "Manual / Docs",
-              stars: "⭐⭐⭐⭐",
-              color: "text-blue-400",
-              isWinner: false
-            },
-            {
-              name: "1xSlots",
-              diff: "Mais difícil",
-              speed: "Até 72h",
-              kyc: "Rigoroso / Video",
-              stars: "⭐⭐⭐",
-              color: "text-red-400",
-              isWinner: false
-            },
-          ].map((row, i) => (
-            <tr 
-              key={i} 
-              className={`transition-colors hover:bg-white/[0.03] ${row.isWinner ? 'bg-emerald-500/5' : ''}`}
-            >
-              <td className="p-5">
-                <div className="flex items-center gap-2">
-                  <span className="text-white font-black text-sm uppercase tracking-tight">{row.name}</span>
-                  {row.isWinner && <span className="bg-emerald-500 text-black text-[8px] font-black px-1.5 py-0.5 rounded-full uppercase">Top</span>}
-                </div>
-              </td>
-              <td className={`p-5 text-[11px] font-black uppercase italic ${row.color}`}>
-                {row.diff}
-              </td>
-              <td className="p-5 text-zinc-300 text-xs font-medium">
-                <div className="flex items-center gap-2">
-                  <div className={`w-1.5 h-1.5 rounded-full ${row.isWinner ? 'bg-emerald-500 animate-pulse' : 'bg-zinc-600'}`} />
-                  {row.speed}
-                </div>
-              </td>
-              <td className="p-5 text-zinc-400 text-xs font-bold uppercase tracking-tighter">
-                {row.kyc}
-              </td>
-              <td className="p-5 text-[10px] tracking-widest">
-                {row.stars}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    
-    {/* Мобильная подсказка */}
-    <div className="md:hidden p-4 bg-emerald-500/10 border-t border-white/5 text-center">
-      <p className="text-emerald-400 text-[10px] font-black uppercase tracking-widest leading-tight">
-        ← Deslize para ver mais detalhes →
-      </p>
-    </div>
-  </div>
-</div>
-  <div className="mt-12 bg-gradient-to-r from-[#0a0a0a] to-[#050505] border border-white/10 rounded-3xl p-6 max-[500px]:p-4 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
-
-          <div className="flex items-center gap-4 text-center md:text-left">
-            <div className="bg-green-500 p-4 rounded-xl">
-              <Trophy className="text-black" />
-            </div>
-
-            <div>
-              <h2 className="text-xl md:text-3xl font-black uppercase">
-                Vencedor: <span className="text-green-500">{leaders[3].title}</span>
-              </h2>
-              <p className="text-zinc-400 text-xs md:text-sm mt-1">
-                verificação simples
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center md:text-right">
-            <p className="text-zinc-500 text-xs uppercase">Score</p>
-            <p className="text-3xl font-black text-green-500">1 / 15</p>
-          </div>
-
-        </div>
-        <Mindep/>
+      <Mindep />
     </div>
   );
 }

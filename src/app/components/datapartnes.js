@@ -142,6 +142,7 @@ verif: {
   region: "Brazil (BRL)",
   license: "Curacao Gaming License / Anjouan Regulatory Authority",
   compliance: "International Digital AML Standard & Brazil PIX Gateway Protocol",
+  difficulty:"Facilmente",
 
   
   requirements: {
@@ -194,7 +195,7 @@ verif: {
     step_3: "Automated Liveness check (if requested by the system)",
     step_4: "Manual document audit for large cash-outs (> 5,000 BRL)",
     average_approval_time: {
-      automated: "1-3 minutes (AI validation)",
+      automated: "1-3 minutes ",
       manual: "Up to 24 hours (Security queue)"
     }
   },
@@ -269,6 +270,7 @@ mindep:{
     kyc_required: "Вывод средств требует верификации личности (KYC)",
     dynamic_limits: "Лимиты могут динамически изменяться в зависимости от аккаунта и платёжного метода"
   }
+  
 }
   },
   {
@@ -428,6 +430,7 @@ verif: {
   region: "Brazil (BRL)",
   license: "Curacao Antillephone N.V. / Licensing for 2026",
   compliance: "International KYC/AML Standards & SPA Regulatory Alignment",
+  difficulty:"Multar",
 
   // Особенности 888starz: упор на подтверждение личности и борьбу с мультиаккаунтингом
   requirements: {
@@ -480,7 +483,7 @@ verif: {
     step_3: "Upload of ID and Proof of Address in the 'Verification' tab",
     step_4: "Manual review by the security department",
     average_approval_time: {
-      automated: "N/A (Primarily manual verification)",
+      automated: "3 minutes",
       manual: "12-48 hours (Typically faster on weekdays)"
     }
   },
@@ -493,6 +496,7 @@ verif: {
 
   penalties: "Suspension of account for 'Bonus Abusing' or multi-accounting. Funds may be frozen until full video-identity confirmation is completed."
 },
+
 
 mindep:{
   brand: "888Starz",
@@ -722,6 +726,7 @@ verif: {
   region: "Brazil (BRL)",
   license: "Curacao eGaming / Anjouan Licensing Board",
   compliance: "International AML/KYC Standard & Local PIX Gateway Integration",
+   difficulty:"Média",
 
   
   requirements: {
@@ -775,7 +780,7 @@ verif: {
     step_3: "Document upload in the 'Personal Profile' section",
     step_4: "Manual security review (Checking for multi-accounting/bonus-abuse)",
     average_approval_time: {
-      automated: "N/A (Primarily manual)",
+      automated: "10 minutes",
       manual: "24-72 hours (Depending on queue)"
     }
   },
@@ -1023,6 +1028,7 @@ verif: {
   region: "Brazil (BRL)",
   license: "SRIJ/SPA Federal License №001/2026",
   compliance: "Federal Law 14.790/23 (New Gambling Framework)",
+  difficulty:"Duro",
 
   requirements: {
     identity: {

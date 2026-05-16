@@ -1,9 +1,10 @@
 import { leaders } from './datapartnes';
 import { Wallet, ArrowRight, Star, MousePointer2, Trophy, Zap, ShieldCheck } from "lucide-react";
+import Platsite from './Plitsistem'
 
 export default function Mindep() {
   return (
-    <div className="min-h-screen w-full py-12 bg-[#050505] rounded-[10px]  text-zinc-100 selection:bg-emerald-500/30">
+    <div className="min-h-screen w-full py-12   text-zinc-100 selection:bg-emerald-500/30">
       
       {/* HEADER SECTION */}
       <div className="text-center mb-20 px-4">
@@ -169,6 +170,7 @@ export default function Mindep() {
           </div>
         </div>
       </div>
+      <Platsite/>
     </div>
   );
 }

@@ -140,7 +140,7 @@ export default function Sposobreg() {
         </div>
 
         {/* WINNER */}
-        <div className="mt-12 bg-gradient-to-r from-[#0a0a0a] to-[#050505] border border-white/10 rounded-3xl p-6 max-[500px]:p-4 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+        <div className="mt-12 bg-gradient-to-r bg-gray-900 rounded-3xl p-6 max-[500px]:p-4 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
 
           <div className="flex items-center gap-4 text-center md:text-left">
             <div className="bg-green-500 p-4 rounded-xl">

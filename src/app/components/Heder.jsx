@@ -122,7 +122,7 @@ export default function Header() {
           </span>
         </button>
     
-        {/* LISTA DE BÔNUS (EXIBIDA AO CLICAR) */}
+      
         <div className={`flex flex-col gap-2 overflow-hidden mt-2 transition-all duration-300 ${isBonusOpen ? 'max-h-[400px] opacity-100 mb-4' : 'max-h-0 opacity-0'}`}>
           {leaders.slice(0, 3).map((leader) => (
             <a 
