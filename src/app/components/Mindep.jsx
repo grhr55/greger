@@ -1,6 +1,6 @@
 import { leaders } from './datapartnes';
 import { Wallet, ArrowRight, Star, MousePointer2, Trophy, Zap, ShieldCheck } from "lucide-react";
-import Platsite from './Plitsistem'
+
 
 export default function Mindep() {
   return (
@@ -170,7 +170,7 @@ export default function Mindep() {
           </div>
         </div>
       </div>
-      <Platsite/>
+    
     </div>
   );
 }
